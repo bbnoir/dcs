@@ -1,0 +1,2 @@
+ncprotect: 13.10-s005: (c) Copyright 1995-2013 Cadence Design Systems, Inc.
+ncprotect: *E,EXIST: The output file 'PATTERN.svp' already exists, use -overwrite option or delete current 'PATTERN.svp'.

@@ -1,0 +1,19 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Thu Jun  1 20:46:02 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               5
+    Cells do not drive (LINT-1)                                     5
+--------------------------------------------------------------------------------
+
+Warning: In design 'Fpc', cell 'B_23' does not drive any nets. (LINT-1)
+Warning: In design 'Fpc', cell 'B_24' does not drive any nets. (LINT-1)
+Warning: In design 'Fpc', cell 'B_25' does not drive any nets. (LINT-1)
+Warning: In design 'Fpc', cell 'B_26' does not drive any nets. (LINT-1)
+Warning: In design 'Fpc', cell 'B_27' does not drive any nets. (LINT-1)
+1

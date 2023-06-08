@@ -1,0 +1,21 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Fri Jun  2 15:30:34 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               7
+    Cells do not drive (LINT-1)                                     7
+--------------------------------------------------------------------------------
+
+Warning: In design 'SS', cell 'C13763' does not drive any nets. (LINT-1)
+Warning: In design 'SS', cell 'C13790' does not drive any nets. (LINT-1)
+Warning: In design 'SS', cell 'C13820' does not drive any nets. (LINT-1)
+Warning: In design 'SS', cell 'C13855' does not drive any nets. (LINT-1)
+Warning: In design 'SS', cell 'C13898' does not drive any nets. (LINT-1)
+Warning: In design 'SS', cell 'C13906' does not drive any nets. (LINT-1)
+Warning: In design 'SS', cell 'B_81' does not drive any nets. (LINT-1)
+1

@@ -1,0 +1,3 @@
+s1(28Apr2023:00:12:57):  irun TESTBENCH.sv -define RTL -debug -notimingchecks -loadpli1 debpli:novas_pli_boot 
+s2(28Apr2023:00:22:43):  irun TESTBENCH.sv -define RTL -debug -notimingchecks -loadpli1 debpli:novas_pli_boot 
+s3(11May2023:01:04:58):  irun TESTBENCH.sv -define RTL -debug -notimingchecks -loadpli1 debpli:novas_pli_boot 

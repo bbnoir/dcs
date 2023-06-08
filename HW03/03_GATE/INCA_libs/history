@@ -1,0 +1,7 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(06Apr2023:16:52:07):( irun TESTBENCH.sv -define GATE -debug -loadpli1 debpli:novas_pli_boot -v /RAID2/COURSE/iclab/iclabta01/umc018/Verilog/umc18_neg.v )
+s2::(12Apr2023:16:13:16):( irun TESTBENCH.sv -define GATE -debug -loadpli1 debpli:novas_pli_boot -v /RAID2/COURSE/iclab/iclabta01/umc018/Verilog/umc18_neg.v )
+s3::(12Apr2023:17:56:59):( irun TESTBENCH.sv -define GATE -debug -loadpli1 debpli:novas_pli_boot -v /RAID2/COURSE/iclab/iclabta01/umc018/Verilog/umc18_neg.v )

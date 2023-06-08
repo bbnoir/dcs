@@ -1,0 +1,167 @@
+debImport "/RAID2/COURSE/dcs/dcs064/HW02/01_RTL/I2S.sv" \
+          "/RAID2/COURSE/dcs/dcs064/HW02/01_RTL/PATTERN.sv" \
+          "/RAID2/COURSE/dcs/dcs064/HW02/01_RTL/TESTBED.sv" "-sv" -path \
+          {/RAID2/COURSE/dcs/dcs064/HW02/01_RTL}
+schCreateWindow -delim "." -win $_nSchema1 -scope "TESTBENCH"
+schSelect -win $_nSchema2 -inst "I_I2S"
+schPushViewIn -win $_nSchema2
+schSelect -win $_nSchema2 -inst "I2S\(@1\):FSM0:36:70:FSM"
+schPushViewIn -win $_nSchema2
+fsmSetCurrentWindow -win $_nState3
+fsmResizeWindow 0 27 1028 327 -win $_nState3
+fsmResizeWindow 0 27 1028 327 -win $_nState3
+fsmResizeWindow 0 27 1028 327 -win $_nState3
+fsmZoomIn -win $_nState3
+fsmZoomIn -win $_nState3
+fsmZoomIn -win $_nState3
+fsmZoomOut -win $_nState3
+fsmZoomOut -win $_nState3
+fsmZoom 1120 719 1218 950 -win $_nState3
+fsmZoomOut -win $_nState3
+fsmZoomOut -win $_nState3
+fsmZoomOut -win $_nState3
+fsmZoomOut -win $_nState3
+fsmZoomOut -win $_nState3
+fsmZoomOut -win $_nState3
+fsmZoom 1052 756 1077 875 -win $_nState3
+fsmZoomOut -win $_nState3
+fsmZoomOut -win $_nState3
+fsmZoomOut -win $_nState3
+fsmZoomOut -win $_nState3
+fsmZoomOut -win $_nState3
+fsmZoomOut -win $_nState3
+fsmZoomOut -win $_nState3
+fsmZoomOut -win $_nState3
+fsmZoomOut -win $_nState3
+fsmZoomOut -win $_nState3
+fsmZoomOut -win $_nState3
+fsmResizeWindow 2 29 1024 323 -win $_nState3
+fsmResizeWindow 2 29 1024 323 -win $_nState3
+fsmResizeWindow 2 29 1024 323 -win $_nState3
+fsmResizeWindow 2 29 1025 323 -win $_nState3
+fsmResizeWindow 2 29 1024 323 -win $_nState3
+fsmResizeWindow 2 29 1026 326 -win $_nState3
+fsmResizeWindow 2 29 1028 327 -win $_nState3
+fsmResizeWindow 2 29 1028 327 -win $_nState3
+fsmResizeWindow 2 29 1028 327 -win $_nState3
+fsmResizeWindow 2 29 1028 327 -win $_nState3
+verdiDockWidgetMaximize -dock windowDock_nState_3
+fsmResizeWindow 0 27 1536 736 -win $_nState3
+fsmZoomIn -win $_nState3
+fsmZoomIn -win $_nState3
+fsmZoomIn -win $_nState3
+fsmZoomIn -win $_nState3
+fsmZoomOut -win $_nState3
+fsmZoom -508 -218 930 1527 -win $_nState3
+fsmCloseWindow -win $_nState3
+debReload
+schCreateWindow -delim "." -win $_nSchema1 -scope "TESTBENCH"
+schSelect -win $_nSchema4 -inst "I_I2S"
+schPushViewIn -win $_nSchema4
+schSelect -win $_nSchema4 -inst "I2S\(@1\):FSM0:35:85:FSM"
+schSelect -win $_nSchema4 -inst "I2S\(@1\):FSM0:35:85:FSM"
+schDeselectAll -win $_nSchema4
+schSelect -win $_nSchema4 -inst "I2S\(@1\):FSM0:35:85:FSM"
+schPushViewIn -win $_nSchema4
+fsmSetCurrentWindow -win $_nState5
+fsmResizeWindow 0 27 1028 327 -win $_nState5
+fsmResizeWindow 0 27 1028 327 -win $_nState5
+fsmResizeWindow 0 27 1028 327 -win $_nState5
+fsmZoomIn -win $_nState5
+fsmZoomIn -win $_nState5
+fsmZoomIn -win $_nState5
+fsmZoomOut -win $_nState5
+fsmZoomOut -win $_nState5
+fsmZoomOut -win $_nState5
+fsmZoom 1125 1259 1544 1405 -win $_nState5
+verdiDockWidgetMaximize -dock windowDock_nState_5
+fsmResizeWindow 0 27 1536 736 -win $_nState5
+fsmFit -win $_nState5
+fsmCloseWindow -win $_nState5
+debReload
+schSelect -win $_nSchema4 -inst "I2S\(@1\):FSM0:36:71:FSM"
+schSelect -win $_nSchema4 -inst "I2S\(@1\):FSM0:36:71:FSM"
+schPushViewIn -win $_nSchema4
+fsmSetCurrentWindow -win $_nState6
+fsmResizeWindow 0 27 1028 325 -win $_nState6
+fsmResizeWindow 0 27 1028 325 -win $_nState6
+fsmResizeWindow 0 27 1028 325 -win $_nState6
+fsmZoomIn -win $_nState6
+fsmZoomIn -win $_nState6
+fsmZoomIn -win $_nState6
+fsmZoomIn -win $_nState6
+fsmZoom -123 641 361 857 -win $_nState6
+verdiDockWidgetMaximize -dock windowDock_nState_6
+fsmResizeWindow 0 27 1536 736 -win $_nState6
+fsmFit -win $_nState6
+fsmCloseWindow -win $_nState6
+debReload
+schSelect -win $_nSchema4 -inst "I2S\(@1\):FSM0:36:80:FSM"
+schSelect -win $_nSchema4 -inst "I2S\(@1\):FSM0:36:80:FSM"
+schPushViewIn -win $_nSchema4
+fsmSetCurrentWindow -win $_nState7
+fsmResizeWindow 0 27 1028 325 -win $_nState7
+fsmResizeWindow 0 27 1028 325 -win $_nState7
+fsmResizeWindow 0 27 1028 325 -win $_nState7
+verdiDockWidgetMaximize -dock windowDock_nState_7
+fsmResizeWindow 0 27 1536 736 -win $_nState7
+fsmFit -win $_nState7
+fsmZoomOut -win $_nState7
+fsmZoomOut -win $_nState7
+fsmZoomIn -win $_nState7
+fsmZoomIn -win $_nState7
+fsmCloseWindow -win $_nState7
+debReload
+schSelect -win $_nSchema4 -inst "I2S:FSM0:35:79:FSM"
+schPushViewIn -win $_nSchema4
+fsmSetCurrentWindow -win $_nState8
+fsmResizeWindow 0 27 1028 325 -win $_nState8
+fsmResizeWindow 0 27 1028 325 -win $_nState8
+fsmResizeWindow 0 27 1028 325 -win $_nState8
+fsmZoomIn -win $_nState8
+fsmZoomIn -win $_nState8
+fsmZoomIn -win $_nState8
+fsmZoom 843 612 942 809 -win $_nState8
+fsmCloseWindow -win $_nState8
+verdiDockWidgetFix -dock widgetDock_<Inst._Tree>
+schCloseWindow -win $_nSchema4
+debReload
+schSelect -win $_nSchema2 -inst "I2S:FSM0:31:77:FSM"
+schPushViewIn -win $_nSchema2
+fsmSetCurrentWindow -win $_nState9
+fsmResizeWindow 0 27 1028 325 -win $_nState9
+fsmResizeWindow 0 27 1028 325 -win $_nState9
+fsmResizeWindow 0 27 1028 325 -win $_nState9
+fsmZoomIn -win $_nState9
+fsmZoomIn -win $_nState9
+fsmZoomIn -win $_nState9
+fsmZoom 210 696 533 895 -win $_nState9
+verdiDockWidgetMaximize -dock windowDock_nState_9
+fsmResizeWindow 0 27 1536 736 -win $_nState9
+fsmFit -win $_nState9
+fsmCloseWindow -win $_nState9
+debReload
+schSelect -win $_nSchema2 -inst "I2S:FSM0:31:75:FSM"
+schPushViewIn -win $_nSchema2
+fsmSetCurrentWindow -win $_nState10
+fsmResizeWindow 0 27 1028 325 -win $_nState10
+fsmResizeWindow 0 27 1028 325 -win $_nState10
+fsmResizeWindow 0 27 1028 325 -win $_nState10
+verdiDockWidgetMaximize -dock windowDock_nState_10
+fsmResizeWindow 0 27 1536 736 -win $_nState10
+fsmFit -win $_nState10
+fsmCloseWindow -win $_nState10
+schSelect -win $_nSchema2 -inst "I2S:Always1:36:39:Reg"
+schPushViewIn -win $_nSchema2
+srcSetScope -win $_nTrace1 "TESTBENCH.I_I2S" -delim "."
+srcSelect -win $_nTrace1 -range {36 39 1 2 1 1}
+srcShowCalling -win $_nTrace1
+srcSelect -win $_nTrace1 -range {29 29 3 4 1 1}
+srcHBSelect "TESTBENCH" -win $_nTrace1
+srcShowDefine -win $_nTrace1
+srcSelect -win $_nTrace1 -range {1 1 3 4 1 1}
+srcHBSelect "TESTBENCH.I_I2S" -win $_nTrace1
+srcShowDefine -win $_nTrace1
+schCreateWindow -delim "." -win $_nSchema1 -scope "TESTBENCH.I_I2S"
+verdiDockWidgetMaximize -dock windowDock_nSchema_11
+debExit

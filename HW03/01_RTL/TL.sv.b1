@@ -1,0 +1,251 @@
+module TL(
+  // Input signals
+  clk,
+  rst_n,
+  in_valid,
+  car_main_s,
+  car_main_lt,
+  car_side_s,
+  car_side_lt,
+  // Output signals
+  out_valid,
+  light_main,
+  light_side
+);
+
+//---------------------------------------------------------------------
+//   PORT DECLARATION
+//---------------------------------------------------------------------
+input clk, rst_n, in_valid;
+input [2:0] car_main_s, car_main_lt, car_side_s, car_side_lt; 
+output logic out_valid;
+output logic [1:0]light_main, light_side;
+
+//Master
+typedef enum logic [2:0] {IDLE, MS, ML, SS, SL, DEFAULT} STATE;
+STATE state, state_nxt;
+logic [2:0] car_main_s_reg, car_main_lt_reg, car_side_s_reg, car_side_lt_reg; 
+logic [2:0] car_main_s_nxt, car_main_lt_nxt, car_side_s_nxt, car_side_lt_nxt; 
+
+//TLC
+typedef enum logic [1:0] {RED, YELLOW, GREEN, LEFT} LIGHT;
+LIGHT light_on, light_on_nxt;
+logic light_done;
+
+//Combiner
+typedef enum logic [2:0] {ms, ss, ml, sl, d} DIR;
+DIR dir, dir_reg, dir_nxt;
+logic ok, on, done;
+
+//Timer
+logic t_load, t_done;
+logic [1:0] t_in, t_green, t_red;
+Timer t1(.*);
+
+//store when in_valid
+always_ff @( posedge clk) begin
+  car_main_lt_reg <= car_main_lt_nxt;
+  car_main_s_reg <= car_main_s_nxt;
+  car_side_lt_reg <= car_side_lt_nxt;
+  car_side_s_reg <= car_side_s_nxt;
+end
+
+//Master
+always_ff @( posedge clk, negedge rst_n ) begin
+  if(!rst_n) state <= IDLE;
+  else state <= state_nxt;
+end
+
+always_comb begin : Master
+  car_main_lt_nxt = car_main_lt_reg;
+  car_main_s_nxt = car_main_s_reg;
+  car_side_lt_nxt = car_side_lt_reg;
+  car_side_s_nxt = car_side_s_reg;
+  dir = ms;
+  state_nxt = IDLE;
+  case (state)
+    IDLE: begin
+      out_valid = 'b0;
+      if(in_valid) begin
+        car_main_s_nxt = car_main_s;
+        car_main_lt_nxt = car_main_lt;
+        car_side_s_nxt = car_side_s;
+        car_side_lt_nxt = car_side_lt;
+
+        if(!(|car_main_s_nxt || |car_main_lt_nxt || |car_side_s_nxt || |car_side_lt_nxt)) state_nxt = DEFAULT;
+        else state_nxt = MS;
+      end else begin
+        state_nxt = IDLE;
+        car_main_s_nxt = 0;
+        car_main_lt_nxt = 0;
+        car_side_s_nxt = 0;
+        car_side_lt_nxt = 0;
+      end
+    end
+    MS: begin
+      out_valid = 'b1;
+      dir = ms;
+      if(!ok) state_nxt = MS;
+      else if(car_main_s_reg > 4) begin
+        state_nxt = MS;
+        car_main_s_nxt = car_main_lt_reg-4;
+      end
+      else if(|car_main_lt_reg) state_nxt = ML;
+      else if(|car_side_s_reg) state_nxt = SS;
+      else if(|car_side_lt_reg) state_nxt = SL;
+      else state_nxt = IDLE;
+    end
+    ML: begin
+      out_valid = 'b1;
+      dir = ml;
+      if(!ok) state_nxt = ML;
+      else if(car_main_lt_reg > 3) begin
+        state_nxt = ML;
+        car_main_lt_nxt = car_main_lt_reg-3;
+      end
+      else if(|car_side_s_reg) state_nxt = SS;
+      else if(|car_side_lt_reg) state_nxt = SL;
+      else state_nxt = IDLE;
+    end
+    SS: begin
+      out_valid = 'b1;
+      dir = ss;
+      if(!ok) state_nxt = SS;
+      else if(car_side_s_reg > 3) begin
+        state_nxt = SS;
+        car_side_s_nxt = car_side_s_reg-3;
+      end
+      else if(|car_side_lt_reg) state_nxt = SL;
+      else state_nxt = IDLE;
+    end
+    SL: begin
+      out_valid = 'b1;
+      dir = sl;
+      if(!ok) state_nxt = SL;
+      else if(car_side_lt_reg > 2) begin
+        state_nxt = SL;
+        car_side_lt_nxt = car_side_lt_reg-2;
+      end
+      else state_nxt = IDLE;
+    end
+  endcase
+end
+
+//Light
+always_ff @(posedge clk, negedge rst_n) begin
+  if(!rst_n) light_on <= GREEN;
+  else light_on <= light_on_nxt;
+end
+
+always_comb begin : TLC
+  light_on_nxt = GREEN;
+  t_load = t_done;
+
+  case (dir_reg)
+    ms: begin
+      t_green = 2'd3;
+      t_red = 2'd1;
+    end
+    ml: begin
+      t_green = 2'd2;
+      t_red = 2'd1;
+    end
+    ss: begin
+      t_green = 2'd2;
+      t_red = 2'd0;
+    end
+    sl: begin
+      t_green = 2'd1;
+      t_red = 2'd0;
+    end
+    default: begin
+      t_green = 2'd1;
+      t_red = 2'd0;
+    end
+  endcase
+
+  case (light_on)
+    RED: begin
+      if(t_done & on) light_on_nxt = (dir == ml || dir == sl)? LEFT:GREEN;
+      else light_on_nxt = RED;
+      t_load = t_done & on;
+      t_in = t_green;
+      done = t_done;
+    end
+    GREEN: begin
+      if(!out_valid) begin
+        light_on_nxt = GREEN;
+        t_load = 'b1;
+        t_in = 2'd3;
+        done = 'b0;
+      end
+      else begin
+        if(state != state_nxt) light_on_nxt = YELLOW;
+        //if(t_done && !on) light_on_nxt = YELLOW;
+        else light_on_nxt = GREEN;
+        t_load = t_done & !on;
+        t_in = 'b0;
+        done = t_done;
+      end
+    end
+    LEFT: begin
+      if(state != state_nxt) light_on_nxt = YELLOW;
+      //if(t_done && !on) light_on_nxt = YELLOW;
+      else light_on_nxt = LEFT;
+      t_load = t_done & !on;
+      t_in = 'b0;
+      done = t_done;
+    end
+    YELLOW: begin
+      light_on_nxt = RED;
+      t_load = t_done;
+      t_in = t_red;
+      done = 'b1;
+    end
+  endcase
+
+end
+
+//Combiner
+always_ff @( posedge clk, negedge rst_n ) begin
+  if(!rst_n) dir_reg <= d;
+  else dir_reg <= dir_nxt;
+end
+
+assign on = dir_reg == dir;
+assign ok = on & done;
+assign dir_nxt = (!on & !done)? dir:dir_reg;
+
+always_comb begin
+  case(dir_reg)
+    ms: {light_main, light_side} = {light_on, RED};
+    ml: {light_main, light_side} = {light_on, RED};
+    ss: {light_main, light_side} = {RED, light_on};
+    sl: {light_main, light_side} = {RED, light_on};
+    default: {light_main, light_side} = {GREEN, RED};
+  endcase
+end
+
+
+endmodule
+
+module Timer(clk, rst_n, t_load, t_in, t_done);
+input clk, t_load, rst_n;
+input [1:0] t_in;
+output logic t_done;
+
+logic [1:0] count, count_nxt;
+
+always_ff @( posedge clk, negedge rst_n ) begin
+  if(!rst_n) count <= 0;
+  else count <= count_nxt;
+end
+
+always_comb begin
+  if(t_load) count_nxt = t_in;
+  else if(t_done) count_nxt = 0;
+  else count_nxt = count-1'b1;
+end
+
+assign t_done = (count == 0);
+endmodule

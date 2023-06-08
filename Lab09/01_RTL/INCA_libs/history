@@ -1,0 +1,5 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(11May2023:15:32:00):( irun TESTBENCH.sv -define RTL -debug -notimingchecks -loadpli1 debpli:novas_pli_boot )

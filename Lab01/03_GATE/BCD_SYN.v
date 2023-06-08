@@ -1,0 +1,1 @@
+../02_SYN/Netlist/BCD_SYN.v

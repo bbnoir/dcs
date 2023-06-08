@@ -1,0 +1,177 @@
+irun: 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun	15.20-s084: Started on Mar 01, 2023 at 00:07:20 CST
+irun
+	-timescale 1ns/1fs
+	-override_precision
+	-sdf_precision 1fs
+	TESTBED.sv
+	-define GATE
+	-debug
+	-v /RAID2/COURSE/iclab/iclabta01/umc018/Verilog/umc18_neg.v
+	-nontcglitch
+file: TESTBED.sv
+		errors: 0, warnings: 0
+	module worklib.BCD:v
+		errors: 0, warnings: 0
+	module worklib.TESTBED:sv
+		errors: 0, warnings: 0
+file: /RAID2/COURSE/iclab/iclabta01/umc018/Verilog/umc18_neg.v
+	module umc18_neg.AOI21XL:v
+		errors: 0, warnings: 0
+	module umc18_neg.AOI221XL:v
+		errors: 0, warnings: 0
+	module umc18_neg.AOI222XL:v
+		errors: 0, warnings: 0
+	module umc18_neg.AOI22XL:v
+		errors: 0, warnings: 0
+	module umc18_neg.AOI2BB1XL:v
+		errors: 0, warnings: 0
+	module umc18_neg.AOI31XL:v
+		errors: 0, warnings: 0
+	module umc18_neg.BUFXL:v
+		errors: 0, warnings: 0
+	module umc18_neg.INVXL:v
+		errors: 0, warnings: 0
+	module umc18_neg.MXI2XL:v
+		errors: 0, warnings: 0
+	module umc18_neg.NAND2XL:v
+		errors: 0, warnings: 0
+	module umc18_neg.NOR2X1:v
+		errors: 0, warnings: 0
+	module umc18_neg.NOR2XL:v
+		errors: 0, warnings: 0
+	module umc18_neg.NOR2BXL:v
+		errors: 0, warnings: 0
+	module umc18_neg.NOR3XL:v
+		errors: 0, warnings: 0
+	module umc18_neg.OAI211XL:v
+		errors: 0, warnings: 0
+	module umc18_neg.OAI21XL:v
+		errors: 0, warnings: 0
+	module umc18_neg.OAI22XL:v
+		errors: 0, warnings: 0
+	module umc18_neg.OAI2BB1XL:v
+		errors: 0, warnings: 0
+	module umc18_neg.OAI2BB2XL:v
+		errors: 0, warnings: 0
+	module umc18_neg.OAI31XL:v
+		errors: 0, warnings: 0
+	module umc18_neg.OR2XL:v
+		errors: 0, warnings: 0
+	module umc18_neg.XOR2XL:v
+		errors: 0, warnings: 0
+	primitive umc18_neg.udp_mux2:v
+		errors: 0, warnings: 0
+		Caching library 'umc18_neg' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		TESTBED
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Reading SDF file from location "BCD_SYN.sdf"
+	Compiled SDF file "BCD_SYN.sdf.X" older than source SDF file "BCD_SYN.sdf".
+	Recompiling.
+	Writing compiled SDF file to "BCD_SYN.sdf.X".
+	Annotating SDF timing data:
+		Compiled SDF file:     BCD_SYN.sdf.X
+		Log file:              
+		Backannotation scope:  TESTBED.I_BCD
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance TESTBED.I_BCD.U93 of module MXI2XL <./BCD_SYN.sdf, line 405>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance TESTBED.I_BCD.U93 of module MXI2XL <./BCD_SYN.sdf, line 406>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance TESTBED.I_BCD.U71 of module MXI2XL <./BCD_SYN.sdf, line 628>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance TESTBED.I_BCD.U71 of module MXI2XL <./BCD_SYN.sdf, line 629>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance TESTBED.I_BCD.U53 of module MXI2XL <./BCD_SYN.sdf, line 819>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance TESTBED.I_BCD.U53 of module MXI2XL <./BCD_SYN.sdf, line 820>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance TESTBED.I_BCD.U34 of module XOR2XL <./BCD_SYN.sdf, line 1013>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance TESTBED.I_BCD.U34 of module XOR2XL <./BCD_SYN.sdf, line 1014>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance TESTBED.I_BCD.U34 of module XOR2XL <./BCD_SYN.sdf, line 1017>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance TESTBED.I_BCD.U34 of module XOR2XL <./BCD_SYN.sdf, line 1018>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance TESTBED.I_BCD.U23 of module MXI2XL <./BCD_SYN.sdf, line 1134>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance TESTBED.I_BCD.U23 of module MXI2XL <./BCD_SYN.sdf, line 1135>.
+	Annotation completed with 0 Errors and 12 Warnings
+	SDF statistics: No. of Pathdelays = 231  Annotated = 100.00% -- No. of Tchecks = 0  Annotated = 0.00% 
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		umc18_neg.MXI2XL:v <0x2cfe4673>
+			streams:   0, words:     0
+		umc18_neg.MXI2XL:v <0x67c2b347>
+			streams:   0, words:     0
+		umc18_neg.XOR2XL:v <0x7b3307f6>
+			streams:   0, words:     0
+			streams:   4, words: 37912
+		worklib.TESTBED:sv <0x4f3e8851>
+			streams:   9, words:  2527
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:               103      25
+		UDPs:                    4       1
+		Primitives:            138       7
+		Timing outputs:        100      10
+		Registers:              12      12
+		Scalar wires:          100       -
+		Expanded wires:         20       4
+		Vectored wires:          5       -
+		Always blocks:           1       1
+		Initial blocks:          4       4
+		Pseudo assignments:      8       8
+		Interconnect:          225       -
+		Simulation timescale:  1fs
+	Writing initial simulation snapshot: worklib.TESTBED:sv
+Loading snapshot worklib.TESTBED:sv .................... Done
+SVSEED default: 1
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /RAID2/EDA/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_P-2019.06, Linux, 05/26/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'BCD_SYN.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+
+[0;40;97mO[0;40;97mOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO[0;40;37mO[0;40;37mP[0;40;90mC[0;40;90m1[0;40;90mo[0;40;90mC[0;40;90mp[0;40;37mP[0;40;37mP[0;40;37mO[0;40;97mO[0;40;97mOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+[0;40;97mOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO[0;40;37mP [0;40;90m-[0;40;31mP[0;40;91mP[0;40;91mPPPP[0;40;31mP[0;40;90mo[0;40;90m+[0;40;90mP[0;40;37mO[0;40;97mO[0;40;97mOOOOOOOOOOOOOOOOOOOOOOOOO
+[0;40;97mOOOOOOOOOOOOOOOOOOOOOOOOO[0;40;97mO[0;40;97mO[0;40;37mOO[0;40;97mO[0;40;37mO[0;40;90m-[0;40;90m-[0;40;31m0[0;40;91mP[0;40;91mPPPPPPPP[0;40;90mo[0;40;90m+[0;40;37mP[0;40;97mO[0;40;97mO[0;40;97mOOOOOOOOOOOOOOOOOOOOOO
+[0;40;97mOOOOOOOOOOOOOOOOOOOO[0;40;97mO[0;40;37mO[0;40;90m0[0;40;90mo[0;40;90mo[0;40;90mP[0;40;31mP[0;40;31mPPP[0;40;90mP[0;40;90mo[0;40;90m+[0;40;90m-c[0;40;31mP[0;40;91mP[0;40;91mPPPPPPPP[0;40;31mP[0;40;90m1[0;40;37mO[0;40;97mO[0;40;97mO[0;40;97mOOOOOOOOOOOOOOOOOOOO
+[0;40;97mOOOOOOOOOOOOOOOOOOOO[0;40;90mc [0;40;31mP[0;40;91mP[0;40;91mPPPPPPPPPP[0;40;31mP[0;40;90mo[0;40;90mc[0;40;90mc[0;40;90mP[0;40;31m0[0;40;91mP[0;40;91mPPPPPP[0;40;31mP[0;40;90m+[0;40;37mO[0;40;97mO[0;40;97mOOOOOOOOOOOOOOOOOOO
+[0;40;97mOOOOOOOOOOOOOOOOOOOO[0;40;37mp[0;40;90mo[0;40;90m1[0;40;90mC[0;40;31mP[0;40;31mP[0;40;31mP[0;40;31mP[0;40;31mP[0;40;31mPPPPPP[0;40;91mPPP[0;40;31mP[0;40;31mP[0;40;31mo[0;40;31mp[0;40;31mO[0;40;31mP[0;40;91mP[0;40;91mPPP[0;40;31mP[0;40;90mc[0;40;37mO[0;40;97mO[0;40;97mOOOOOOOOOOOOOOOOOO
+[0;40;97mOOOOOOOOOOOOOOOOOOOOOOO[0;40;97mO[0;40;37mO[0;40;90mC  [0;40;90mc[0;40;90mo[0;40;31mP[0;40;31mP[0;40;31mP[0;40;31mP[0;40;91mP[0;40;91mPPPPPPPPPPPPPPP[0;40;90m-[0;40;90mc[0;40;37mO[0;40;37mO[0;40;97mO[0;40;97mO[0;40;97mOOOOOOOOOOOOOO         [4m[1;36m~ ~ ~ ~ ~ ~ Congratulations ~ ~ ~ ~ ~ ~[0m
+[0;40;97mOOOOOOOOOOOOOOOOOOOOO[0;40;97mO[0;40;37mP[0;40;90mc[0;40;90m-[0;40;90mo[0;40;31mP[0;40;91mP[0;40;91mPPPPPPPPPPPPPPPPPPPPPPPP[0;40;31mP[0;40;90m+[0;40;90m-[0;40;90mC[0;40;37mO[0;40;97mO[0;40;97mO[0;40;97mOOOOOOOOOOO                   [4m[1;36mAll patterns passed[0m 
+[0;40;97mOOOOOOOOOOOOOOOOOOO[0;40;37mO[0;40;37mP [0;40;90mc[0;40;31mP[0;40;91mP[0;40;91mPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP[0;40;31mP[0;40;90m+[0;40;90m-[0;40;90mO[0;40;37mO[0;40;97mO[0;40;97mOOOOOOOOO
+[0;40;97mOOOOOOOOOOOOOOOOO[0;40;97mO[0;40;37mP [0;40;90mo[0;40;31mP[0;40;91mP[0;40;91mPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP[0;40;31mP[0;40;90m-[0;40;90mo[0;40;37mO[0;40;97mO[0;40;97mOOOOOOO
+[0;40;97mOOOOOOOOOOOOOOOO[0;40;37mP[0;40;90m-[0;40;90m+[0;40;31mP[0;40;91mP[0;40;91mPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP[0;40;31mP[0;40;90m-[0;40;90mC[0;40;37mO[0;40;97mO[0;40;97mOOOOO
+[0;40;97mOOOOOOOOOOOOOO[0;40;37mP[0;40;90mC[0;40;90m-[0;40;31mP[0;40;91mP[0;40;91mPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP[0;40;31mP[0;40;90m-[0;40;37mO[0;40;97mO[0;40;97mO[0;40;97mOOO
+[0;40;97mOOOOOOOO[0;40;97mOOOOO[0;40;37mP[0;40;90m-[0;40;90m+[0;40;91mP[0;40;91mPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP[0;40;90mc[0;40;90mo[0;40;97mO[0;40;97mO[0;40;97mOO
+[0;40;97mOOOOO[0;40;97mO[0;40;37mP[0;40;90mo[0;40;90m-[0;40;37mO[0;40;97mO[0;40;97mO[0;40;37mP [0;40;31mP[0;40;91mP[0;40;91mPPPPPPPPPPPPPPPPPPPP[0;40;90mC[0;40;90mC[0;40;31mP[0;40;31mP[0;40;91mP[0;40;91mPPPPPPPPPPPPPPPPPPPPPPPP[0;40;90m+[0;40;90m-[0;40;97mO[0;40;97mO[0;40;97mO
+[0;40;97mO[0;40;37mP[0;40;37mP[0;40;37mO[0;40;97mO[0;40;37mp[0;40;90mc[0;40;90m-[0;40;90m--[0;40;37mO[0;40;37mP [0;40;31mP[0;40;91mP[0;40;91mPPPPPPPPPPPPPPPPPPPP[0;40;31mP     [0;40;90m-[0;40;90m-[0;40;90m1[0;40;90mC[0;40;31mP[0;40;31mP[0;40;91mP[0;40;91mPPPPPPPPPPP[0;40;31mP[0;40;31mP[0;40;90mC[0;40;90mc[0;40;90m-[0;40;90m-  [0;40;90mc[0;40;97mO[0;40;97mO
+[0;40;37mP[0;40;90m-[0;40;90m-[0;40;90m-[0;40;90m-[0;40;90mC[0;40;37mP[0;40;37mO[0;40;90m+[0;40;90m-[0;40;90m--[0;40;90mo[0;40;91mP[0;40;91mPPPPPPPPPPPPPPPPPPPPP[0;40;90mo[0;40;90m-           [0;40;90m-[0;40;90mc[0;40;90mC[0;40;31mP[0;40;31mP[0;40;31mP[0;40;90mC[0;40;90mc[0;40;90m-           [0;40;37mO[0;40;97mO
+[0;40;90mp[0;40;90m-[0;40;90m-[0;40;90m-[0;40;90m-----[0;40;90m- [0;40;90m-[0;40;91mP[0;40;91mPPPPPPPPPPPPPPPPPPPPPPPPP[0;40;31mP[0;40;90mC[0;40;37mp[0;40;37mp[0;40;37mp[0;40;37mp[0;40;90mp[0;40;90m1[0;40;90m-            [0;40;90m-[0;40;90m1[0;40;90mp[0;40;90m-[0;40;90m+[0;40;90mo[0;40;31mP[0;40;31mP[0;40;31mP [0;40;37mO
+[0;40;97mO[0;40;97mO[0;40;97mO[0;40;97mO[0;40;37mO[0;40;37mO[0;40;37mO[0;40;90mP[0;40;90m1[0;40;90m- [0;40;31m0[0;40;91mP[0;40;91mPPPPPPPPPPPPPPPPP[0;40;31mPPPPPPP[0;40;31mP[0;40;31mP[0;40;37mO[0;40;97mO[0;40;97mOOOO[0;40;97mO[0;40;37mP[0;40;90mC[0;40;90mP[0;40;37mO[0;40;37mO[0;40;37mP[0;40;90mc[0;40;37mO[0;40;37mP[0;40;37mP[0;40;37mO[0;40;97mO[0;40;97mO[0;40;97mOOO[0;40;97mO[0;40;90m+[0;40;31mP[0;40;91mP[0;40;91mPP[0;40;90m-[0;40;37mO
+[0;40;97mO[0;40;97mOOO[0;40;37mp [0;40;90m-[0;40;90m-[0;40;37mp[0;40;37mP [0;40;31mP[0;40;91mPPPPPPPPPPPPPPPP[0;40;31mP[0;40;31mP[0;40;31mPP[0;40;31mP[0;40;91mP[0;40;91mPP[0;40;31mP[0;40;31mP[0;40;90mo[0;40;37mO[0;40;97mO[0;40;97mO[0;40;97mOOO[0;40;37mO   [0;40;37mp[0;40;97mO[0;40;37mP[0;40;90m0[0;40;97mO[0;40;90m1 [0;40;90m-[0;40;37mO[0;40;97mO[0;40;97mOOO[0;40;97mO[0;40;90mP[0;40;31mP[0;40;31mP[0;40;91mP[0;40;91mP[0;40;90m-[0;40;90mC
+[0;40;97mO[0;40;97mOOOO[0;40;37mp[0;40;37mO[0;40;97mO[0;40;97mO[0;40;37mP [0;40;91mP[0;40;91mPPPPPPPPPPPPPPPP[0;40;31mP[0;40;31mPPPP[0;40;91mP[0;40;91mP[0;40;31mP[0;40;31mP[0;40;31mPP[0;40;90m-[0;40;37mO[0;40;97mO[0;40;97mO[0;40;97mO[0;40;97mOO[0;40;97mO[0;40;37mO[0;40;37mO[0;40;37mP[0;40;90mp[0;40;90mp[0;40;90mp[0;40;90mp[0;40;90m0[0;40;37mP[0;40;37mO[0;40;97mO[0;40;97mOO[0;40;97mO[0;40;97mO[0;40;37mP[0;40;90mc[0;40;31mP[0;40;31mP[0;40;91mP[0;40;91mP[0;40;90m-[0;40;90mo
+[0;40;97mO[0;40;97mOOOOOOOO[0;40;37mP [0;40;91mP[0;40;91mPPPPPPPPP[0;40;31mP[0;40;31mPP[0;40;31mP[0;40;91mP[0;40;91mP[0;40;31mP[0;40;31mP[0;40;31mPPPP[0;40;31mP[0;40;91mP[0;40;31mP[0;40;31mP[0;40;31mPPP[0;40;90mc[0;40;90m-[0;40;90mP[0;40;37mP[0;40;37mP[0;40;37mP[0;40;37mO[0;40;33mp[0;40;33mO[0;40;33mO[0;40;33mOOOOO[0;40;33mO[0;40;33mO[0;40;90mp[0;40;37mP[0;40;37mP[0;40;90m0[0;40;90m+[0;40;90mo[0;40;31mP[0;40;31mPP[0;40;91mP[0;40;91mP [0;40;37mO
+[0;40;97mO[0;40;97mOOOOOOOO[0;40;37mp [0;40;31m0[0;40;91mP[0;40;91mPPPPPPP[0;40;31mP[0;40;31mP[0;40;31mPPP[0;40;31mP[0;40;91mP[0;40;91mP[0;40;31mP[0;40;31mPPPP[0;40;91mP[0;40;91mPP[0;40;31mP[0;40;31mPPPPP[0;40;31mP[0;40;90mc[0;40;90mo[0;40;33mO[0;40;33mO[0;40;33mOOOOOOOOOOOO[0;40;33mO[0;40;90mp[0;40;31mP[0;40;31mP[0;40;31mP[0;40;31mP[0;40;91mP[0;40;91mP[0;40;90mP [0;40;37mO
+[0;40;97mO[0;40;97mOOOOOOOO[0;40;97mO[0;40;90m-[0;40;90m-[0;40;91mP[0;40;91mPPPPPPPP[0;40;31mP[0;40;31mP[0;40;31mPP[0;40;31mP[0;40;91mPPP[0;40;31mP[0;40;31mPP[0;40;91mP[0;40;91mP[0;40;91mP[0;40;91mP[0;40;91mP[0;40;90mp[0;40;90mp[0;40;90mpp[0;40;90mP[0;40;90m-[0;40;33mO[0;40;33mO[0;40;33mOOOOOOOOOOOOOOOO[0;40;33mO[0;40;90mp[0;40;31m0[0;40;91mP[0;40;91mP[0;40;31mP [0;40;90m0[0;40;97mO
+[0;40;97mOOOOOOOOOO[0;40;37mO [0;40;90mc[0;40;91mP[0;40;91mPPPPPPPPPPPPPP[0;40;91mO[0;40;90mp[0;40;90m0[0;40;90mO[0;40;37mO[0;40;37mO[0;40;37mO[0;40;37mOOOOOO[0;40;37mO[0;40;90mp[0;40;90m-[0;40;33mO[0;40;33m0[0;40;33mP[0;40;33mPP[0;40;33mO[0;40;33mO[0;40;33mO[0;40;33mO[0;40;33mO[0;40;33mO[0;40;33mO[0;40;33mOOOOOOO[0;40;90mP[0;40;31mP[0;40;91mP[0;40;90m-[0;40;90m-[0;40;97mO[0;40;97mO
+[0;40;97mOOOOOOOOOOO[0;40;37mO [0;40;90m-[0;40;31m0[0;40;91mP[0;40;91mPPPPPPPP[0;40;91mO[0;40;90mp[0;40;37mO[0;40;37mO[0;40;37mO[0;40;37mOOOOOOOOOOOOOO[0;40;37mO[0;40;90mC[0;40;90mP[0;40;33mO[0;40;33mPPOO[0;40;33mO[0;40;33mO[0;40;33mO[0;40;33mO[0;40;33mO[0;40;33mO[0;40;33mO[0;40;33mO[0;40;90m1[0;40;90mo[0;40;31mP[0;40;90mp[0;40;90mo[0;40;90mc[0;40;90m-[0;40;90m-[0;40;37mO[0;40;97mO[0;40;97mO
+[0;40;97mOOOOOOOOOOOO[0;40;37mO[0;40;90mC [0;40;90mc[0;40;31mP[0;40;91mP[0;40;91mPPP[0;40;91mO[0;40;90mp[0;40;37mO[0;40;37mO[0;40;37mOOOOOOOOOOOOOOOOOOOO[0;40;37mO[0;40;90mo[0;40;90mP[0;40;33mO[0;40;33mP[0;40;33mPPPPP[0;40;33mP[0;40;33mP[0;40;90mp[0;40;31mP[0;40;91mP[0;40;91mPPP[0;40;90mC [0;40;90mo[0;40;37mO[0;40;97mO[0;40;97mOO
+[0;40;97mOOOOOOOOOOOOOO[0;40;37mO[0;40;90mo [0;40;90m-[0;40;90mC[0;40;31m0[0;40;90mO[0;40;37mO[0;40;37mOOOOOOOOOOOOOOOOOOOOOOOOO[0;40;37mO[0;40;90mo[0;40;90mC[0;40;33mO[0;40;33mOP[0;40;90mP[0;40;90mp[0;40;90mp[0;40;37mO[0;40;37mO[0;40;91mP[0;40;91mP[0;40;31mP[0;40;90mC [0;40;90m-[0;40;37mp[0;40;97mO[0;40;97mOOOO
+[0;40;97mOOOOOOOOOOOOOOOO[0;40;37mO[0;40;37mp[0;40;90m1 [0;40;90mc[0;40;90mP[0;40;37mO[0;40;37mO[0;40;37mO[0;40;37mOOOOOOOOOOOOOOOOOOOOOOOO[0;40;37mO[0;40;90mp[0;40;90m+[0;40;37mO[0;40;37mO[0;40;37mO[0;40;37mOO[0;40;37mO[0;40;90mP[0;40;90m- [0;40;90mo[0;40;37mp[0;40;97mO[0;40;97mO[0;40;97mOOOOO
+[0;40;97mOOOOOOOOOOOOOOOOOOO[0;40;37mO[0;40;37mp[0;40;90mp[0;40;90m- [0;40;90m-[0;40;90mC[0;40;90mP[0;40;37mO[0;40;37mO[0;40;37mO[0;40;37mO[0;40;37mOOOOOOOOOOOOOOOOOOOOO[0;40;37mO[0;40;37mP[0;40;90mP[0;40;90mC[0;40;90m- [0;40;90mo[0;40;37mp[0;40;37mO[0;40;97mO[0;40;97mOOOOOOOO
+[0;40;97mOOOOOOOOOOOOOOOOOOOOOOO[0;40;97mO[0;40;37mO[0;40;37mp[0;40;90mp[0;40;90m1[0;40;90m- [0;40;90m-[0;40;90m-[0;40;90m+[0;40;90mC[0;40;90mP[0;40;90mP[0;40;90mP[0;40;37mP[0;40;37mP[0;40;37mP[0;40;37mOOPP[0;40;37mP[0;40;90mP[0;40;90mP[0;40;90m0[0;40;90mC[0;40;90m1[0;40;90m- [0;40;90m-[0;40;90m+[0;40;37mp[0;40;37mp[0;40;37mO[0;40;97mO[0;40;97mO[0;40;97mOOOOOOOOOOO
+[0;40;97mOOOOOOOOOOOOOOOOOOOOOOOOOOOOO[0;40;97mO[0;40;37mO[0;40;37mO[0;40;37mO[0;40;37mp[0;40;37mp[0;40;37mp[0;40;37mp[0;40;90mp[0;40;90mp[0;40;90mp++pp[0;40;90mp[0;40;37mp[0;40;37mp[0;40;37mp[0;40;37mp[0;40;37mO[0;40;37mO[0;40;97mO[0;40;97mO[0;40;97mOOOOOOOOOOOOOOOOO
+[0;40;90m                                                                      
+[0;40;90m                                                                      
+[0;40;90m                                                                      
+[0;40;90m                                                                      
+
+
+[0m Simulation complete via $finish(1) at time 6 US + 0
+ncsim> exit
+TOOL:	irun	15.20-s084: Exiting on Mar 01, 2023 at 00:07:21 CST  (total: 00:00:01)

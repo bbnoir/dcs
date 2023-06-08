@@ -1,0 +1,3 @@
+s1(04May2023:13:22:08):  irun TESTBENCH.sv -define GATE -debug -loadpli1 debpli:novas_pli_boot -v /RAID2/COURSE/iclab/iclabta01/umc018/Verilog/umc18_neg.v -y /RAID2/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v 
+s2(04May2023:13:22:28):  irun TESTBENCH.sv -define GATE -debug -loadpli1 debpli:novas_pli_boot -v /RAID2/COURSE/iclab/iclabta01/umc018/Verilog/umc18_neg.v -y /RAID2/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v 
+s3(04May2023:16:15:01):  irun TESTBENCH.sv -define GATE -debug -loadpli1 debpli:novas_pli_boot -v /RAID2/COURSE/iclab/iclabta01/umc018/Verilog/umc18_neg.v -y /RAID2/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v 

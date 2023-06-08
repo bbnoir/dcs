@@ -1,0 +1,1 @@
+../02_SYN/Netlist/inter_SYN.v

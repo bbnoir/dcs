@@ -1,0 +1,98 @@
+debImport "/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v" \
+          "/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/PATTERN.sv" \
+          "/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/TESTBED.sv" "-sv" -path \
+          {/RAID2/COURSE/dcs/dcs064/HW02/03_GATE}
+schCreateWindow -delim "." -win $_nSchema1 -scope "TESTBENCH"
+verdiDockWidgetMaximize -dock windowDock_nSchema_2
+schSelect -win $_nSchema2 -inst "I_I2S"
+schSelect -win $_nSchema2 -inst "I_I2S"
+schPushViewIn -win $_nSchema2
+schZoomIn -win $_nSchema2 -pos 234134 209060
+schZoomIn -win $_nSchema2 -pos 234134 209059
+schZoomIn -win $_nSchema2 -pos 234134 209059
+schZoomIn -win $_nSchema2 -pos 234133 209059
+schZoomIn -win $_nSchema2 -pos 234133 209059
+schZoomIn -win $_nSchema2 -pos 235273 209059
+schZoom {171419} {199082} {246105} {226875} -win $_nSchema2
+schZoomOut -win $_nSchema2 -pos 184817 213905
+schZoomOut -win $_nSchema2 -pos 184817 213192
+schZoomOut -win $_nSchema2 -pos 184817 212746
+schZoomOut -win $_nSchema2 -pos 184818 212746
+schZoomOut -win $_nSchema2 -pos 194213 208570
+schZoomOut -win $_nSchema2 -pos 194212 207700
+schZoomOut -win $_nSchema2 -pos 195300 204982
+schZoomOut -win $_nSchema2 -pos 195299 204302
+schZoomOut -win $_nSchema2 -pos 195299 203453
+schZoom {189990} {166286} {373701} {320263} -win $_nSchema2
+schZoom {33888} {-41849} {158132} {556008} -win $_nSchema2
+schZoomIn -win $_nSchema2 -pos 102256 372188
+schZoomIn -win $_nSchema2 -pos 102256 372188
+schZoomIn -win $_nSchema2 -pos 102255 372188
+schZoomIn -win $_nSchema2 -pos 102255 372187
+schZoomIn -win $_nSchema2 -pos 102255 372187
+schZoomIn -win $_nSchema2 -pos 102255 372187
+schZoomIn -win $_nSchema2 -pos 102255 372186
+schZoomIn -win $_nSchema2 -pos 102254 372186
+schSetOptions -win $_nSchema2 -pan on
+schZoomIn -win $_nSchema2 -pos 117531 482962
+schZoomIn -win $_nSchema2 -pos 117531 482962
+schZoomIn -win $_nSchema2 -pos 117883 483765
+schSelect -win $_nSchema2 -port "out_right\[31:0\]"
+schZoomOut -win $_nSchema2 -pos 111439 466666
+schZoomOut -win $_nSchema2 -pos 111438 466667
+schZoomOut -win $_nSchema2 -pos 111438 466785
+schZoomOut -win $_nSchema2 -pos 111437 466784
+schZoomOut -win $_nSchema2 -pos 111712 466784
+schZoomOut -win $_nSchema2 -pos 105385 464023
+schZoomOut -win $_nSchema2 -pos 105528 463304
+schZoomIn -win $_nSchema2 -pos 134641 141707
+schZoomIn -win $_nSchema2 -pos 134776 141707
+schZoomIn -win $_nSchema2 -pos 134776 141706
+schZoomIn -win $_nSchema2 -pos 134776 141706
+schZoomIn -win $_nSchema2 -pos 134776 141706
+schZoomIn -win $_nSchema2 -pos 134776 141705
+schSelect -win $_nSchema2 -port "out_left\[31:0\]"
+schZoomOut -win $_nSchema2 -pos 111711 123920
+schZoomOut -win $_nSchema2 -pos 111711 123920
+schZoomOut -win $_nSchema2 -pos 111761 123770
+schZoomOut -win $_nSchema2 -pos 111761 123770
+schZoomOut -win $_nSchema2 -pos 112463 121037
+schZoomOut -win $_nSchema2 -pos 112560 120841
+schZoomOut -win $_nSchema2 -pos 112560 120719
+schZoomOut -win $_nSchema2 -pos 113322 120566
+schZoomOut -win $_nSchema2 -pos 113895 120375
+schDeselectAll -win $_nSchema2
+schZoomIn -win $_nSchema2 -pos 138442 126333
+schZoomIn -win $_nSchema2 -pos 138442 126333
+schZoomIn -win $_nSchema2 -pos 138442 126332
+schZoomIn -win $_nSchema2 -pos 138442 126332
+schZoomIn -win $_nSchema2 -pos 138441 126332
+schZoomIn -win $_nSchema2 -pos 138441 126331
+schZoomIn -win $_nSchema2 -pos 113288 125653
+schZoomIn -win $_nSchema2 -pos 113383 125653
+schZoomOut -win $_nSchema2 -pos 112309 123315
+schZoomOut -win $_nSchema2 -pos 112309 123315
+schZoomOut -win $_nSchema2 -pos 112195 123314
+schZoomOut -win $_nSchema2 -pos 112054 123127
+schZoomOut -win $_nSchema2 -pos 109549 123768
+schZoomOut -win $_nSchema2 -pos 109549 123331
+schZoomOut -win $_nSchema2 -pos 109548 123331
+schZoomOut -win $_nSchema2 -pos 109548 123331
+schZoomOut -win $_nSchema2 -pos 109832 123331
+schZoomOut -win $_nSchema2 -pos 139876 473004
+schZoomOut -win $_nSchema2 -pos 139875 472337
+schZoomOut -win $_nSchema2 -pos 139874 471781
+schZoomOut -win $_nSchema2 -pos 139874 470046
+schZoomIn -win $_nSchema2 -pos 173293 48188
+schZoomIn -win $_nSchema2 -pos 173293 48188
+schZoomIn -win $_nSchema2 -pos 173294 48188
+schZoomIn -win $_nSchema2 -pos 173293 48188
+schZoomIn -win $_nSchema2 -pos 105316 2870
+schZoomIn -win $_nSchema2 -pos 105316 2870
+schZoomIn -win $_nSchema2 -pos 105624 2869
+schZoomIn -win $_nSchema2 -pos 103770 5766
+schZoomOut -win $_nSchema2 -pos 100249 4158
+schZoomOut -win $_nSchema2 -pos 100248 3615
+schZoomOut -win $_nSchema2 -pos 100248 3614
+schZoomOut -win $_nSchema2 -pos 100247 3614
+debExit

@@ -1,0 +1,1 @@
+../02_SYN/Netlist/SMJ_SYN.v

@@ -1,0 +1,92 @@
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s084: Started on Jun 01, 2023 at 10:56:51 CST
+irun
+	TESTBENCH.sv
+	-define RTL
+	-debug
+	+incdir+/usr/synthesis/dw/sim_ver
+	-notimingchecks
+	-loadpli1 debpli:novas_pli_boot
+ncvlog: *W,NOTIND: unable to access -INCDIR /usr/synthesis/dw/sim_ver (No such file or directory).
+file: TESTBENCH.sv
+﻿
+|
+ncvlog: *W,NONPRT (PATTERN.sv,1|0): non-printable character (0xef) ignored.
+(`include file: PATTERN.sv line 1, file: TESTBENCH.sv line 2)
+﻿
+ |
+ncvlog: *W,NONPRT (PATTERN.sv,1|1): non-printable character (0xbb) ignored.
+(`include file: PATTERN.sv line 1, file: TESTBENCH.sv line 2)
+﻿
+  |
+ncvlog: *W,NONPRT (PATTERN.sv,1|2): non-printable character (0xbf) ignored.
+(`include file: PATTERN.sv line 1, file: TESTBENCH.sv line 2)
+	module worklib.synchronizer:v
+		errors: 0, warnings: 0
+	module worklib.CDC:sv
+		errors: 0, warnings: 0
+	module worklib.PATTERN:sv
+		errors: 0, warnings: 0
+module synchronizer(D, Q, clk, rst_n);
+                  |
+ncvlog: *W,RECOME (./synchronizer.v,2|18): recompiling design unit worklib.synchronizer:v.
+	First compiled from line 2 of synchronizer.v.
+(`include file: ./synchronizer.v line 2, `include file: ./CDC.sv line 1, file: TESTBENCH.sv line 5)
+module CDC(// Input signals
+         |
+ncvlog: *W,RECOME (./CDC.sv,2|9): recompiling design unit worklib.CDC:sv.
+	First compiled from line 2 of CDC.sv.
+(`include file: ./CDC.sv line 2, file: TESTBENCH.sv line 5)
+	module worklib.TESTBED:sv
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 4
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		synchronizer
+		TESTBED
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.CDC:sv <0x2250d0e2>
+			streams:  20, words:  6202
+		worklib.PATTERN:sv <0x18ffc386>
+			streams:  20, words: 72711
+		worklib.TESTBED:sv <0x05b8ee67>
+			streams:   1, words:   613
+		worklib.synchronizer:v <0x39fb286b>
+			streams:   4, words:   828
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 4       4
+		Registers:              47      47
+		Scalar wires:           13       -
+		Vectored wires:          3       -
+		Always blocks:          14      14
+		Initial blocks:         11      11
+		Cont. assignments:       3       4
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.synchronizer:v
+Loading snapshot worklib.synchronizer:v .................... Done
+SVSEED default: 1
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_P-2019.06, Linux x86_64/64bit, 05/26/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'CDC.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +mda dumping.
+*Verdi* : End of traversing.
+--------------------------------------------------------------------------------------------------------------------------------------------
+                                                                        FAIL!                                                               
+                                                           out_valid is more than 1 cycles                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------
+Simulation complete via $finish(1) at time 107500 PS + 0
+./PATTERN.sv:165 				$finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s084: Exiting on Jun 01, 2023 at 10:56:53 CST  (total: 00:00:02)

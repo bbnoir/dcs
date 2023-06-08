@@ -1,0 +1,6 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(02Jun2023:15:30:26):( irun TESTBED.sv -define RTL -debug -loadpli1 debpli:novas_pli_boot )
+s2::(02Jun2023:15:33:25):( irun TESTBED.sv -define RTL -debug -loadpli1 debpli:novas_pli_boot )

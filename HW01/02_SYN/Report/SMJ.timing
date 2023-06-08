@@ -1,0 +1,80 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : SMJ
+Version: R-2020.09
+Date   : Sun Mar 12 23:30:21 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: hand_n3[0] (input port)
+  Endpoint: out_data[1]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  hand_n3[0] (in)                          0.00       0.00 r
+  U374/Y (INVXL)                           0.06       0.06 f
+  U400/Y (AOI222XL)                        0.58       0.64 r
+  U401/Y (AOI222XL)                        0.34       0.98 f
+  U402/Y (AOI222XL)                        0.61       1.58 r
+  U403/Y (AOI222XL)                        0.34       1.92 f
+  U404/Y (AOI222XL)                        1.19       3.12 r
+  U405/Y (INVXL)                           0.46       3.58 f
+  U406/Y (OAI22XL)                         0.35       3.93 r
+  U418/Y (INVXL)                           0.13       4.06 f
+  U419/Y (AOI222XL)                        0.59       4.66 r
+  U420/Y (AOI222XL)                        0.31       4.97 f
+  U421/Y (AOI222XL)                        0.63       5.61 r
+  U422/Y (AOI222XL)                        0.31       5.92 f
+  U423/Y (AOI222XL)                        1.72       7.64 r
+  U460/Y (MXI2XL)                          0.75       8.39 f
+  U467/Y (AOI222XL)                        0.68       9.07 r
+  U468/Y (AOI222XL)                        0.31       9.39 f
+  U472/Y (AOI222XL)                        0.56       9.94 r
+  U475/Y (AOI222XL)                        0.30      10.24 f
+  U479/Y (AOI222XL)                        1.64      11.88 r
+  U539/Y (MXI2XL)                          0.75      12.64 r
+  U541/Y (AOI222XL)                        0.34      12.98 f
+  U542/Y (AOI222XL)                        0.53      13.51 r
+  U544/Y (AOI2BB1XL)                       0.34      13.85 r
+  U545/Y (AOI222XL)                        0.23      14.08 f
+  U547/Y (AOI222XL)                        1.63      15.71 r
+  U562/Y (MXI2XL)                          0.73      16.44 r
+  U564/Y (AOI22XL)                         0.28      16.72 f
+  U575/Y (AOI221XL)                        0.44      17.16 r
+  U577/Y (AOI211XL)                        0.16      17.32 f
+  U371/Y (OAI21XL)                         0.63      17.96 r
+  U588/Y (INVXL)                           0.38      18.34 f
+  U619/Y (MXI2XL)                          0.32      18.66 r
+  U626/Y (INVXL)                           0.20      18.85 f
+  U354/Y (NOR2XL)                          0.24      19.10 r
+  U672/Y (XOR2XL)                          0.28      19.38 f
+  U673/Y (NAND2XL)                         0.11      19.49 r
+  U674/Y (OAI211XL)                        0.14      19.63 f
+  U675/Y (NOR4BXL)                         0.34      19.97 r
+  U676/Y (OAI211XL)                        0.16      20.13 f
+  U684/Y (AOI31XL)                         0.18      20.31 r
+  out_data[1] (out)                        0.00      20.31 r
+  data arrival time                                  20.31
+
+  max_delay                               30.00      30.00
+  output external delay                    0.00      30.00
+  data required time                                 30.00
+  -----------------------------------------------------------
+  data required time                                 30.00
+  data arrival time                                 -20.31
+  -----------------------------------------------------------
+  slack (MET)                                         9.69
+
+
+1

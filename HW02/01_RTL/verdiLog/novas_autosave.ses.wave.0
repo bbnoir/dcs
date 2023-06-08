@@ -1,0 +1,78 @@
+Magic 271485
+Revision Verdi_P-2019.06
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 1536 324 205 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/RAID2/COURSE/dcs/dcs064/HW02/01_RTL/I2S.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 30300.000000
+cursor 0.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 9
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/RAID2/COURSE/dcs/dcs064/HW02/01_RTL/I2S.fsdb"
+addSignal -h 15 /TESTBENCH/SD
+addSignal -h 15 -holdScope WS
+addSignal -h 15 -holdScope clk
+addSignal -h 15 -holdScope in_valid
+addSignal -h 15 -holdScope out_left[31:0]
+addSignal -h 15 -holdScope out_right[31:0]
+addSignal -h 15 -holdScope out_valid
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -UNSIGNED -HEX /TESTBENCH/I_I2S/state[1:0]
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/RAID2/COURSE/dcs/dcs064/HW02/01_RTL/I2S.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/TESTBENCH"
+"/TESTBENCH/I_I2S"
+
+SCOPE_LIST_BEGIN
+"/TESTBENCH"
+"/TESTBENCH/I_I2S"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

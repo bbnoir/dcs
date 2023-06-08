@@ -1,0 +1,16 @@
+*design* DebussyLib (btIdent Verdi_R-2020.12-SP2)
+Command arguments:
+    +define+verilog
+    /home/RAID2/COURSE/dcs/dcsta02/TA/Lab05/01_RTL/inter.sv
+    /home/RAID2/COURSE/dcs/dcsta02/TA/Lab05/01_RTL/mem_slave.sv
+    /home/RAID2/COURSE/dcs/dcsta02/TA/Lab05/01_RTL/PATTERN.sv
+    /home/RAID2/COURSE/dcs/dcsta02/TA/Lab05/01_RTL/TESTBENCH.sv
+    -sv
+
+
+*Error* Module PATTERN redefined
+"PATTERN.sv", 2: 
+Highest level modules:
+TESTBENCH
+
+Total	1 error(s),   0 warning(s)

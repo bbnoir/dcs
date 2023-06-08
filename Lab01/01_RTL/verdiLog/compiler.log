@@ -1,0 +1,15 @@
+*design* DebussyLib (btIdent Verdi_P-2019.06)
+Command arguments:
+    +define+verilog
+    /RAID2/COURSE/dcs/dcs064/Lab01/01_RTL/BCD.sv
+    /RAID2/COURSE/dcs/dcs064/Lab01/01_RTL/PATTERN.sv
+    /RAID2/COURSE/dcs/dcs064/Lab01/01_RTL/TESTBED.sv
+    -sv
+
+Highest level modules:
+TESTBED
+
+
+*Error* view PATTERN is not defined for instance I_PATTERN
+"/RAID2/COURSE/dcs/dcs064/Lab01/01_RTL/TESTBED.sv", 37: 
+Total	1 error(s),   0 warning(s)

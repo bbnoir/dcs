@@ -1,0 +1,22 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Fri May 12 08:37:29 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      8
+    Unconnected ports (LINT-28)                                     8
+--------------------------------------------------------------------------------
+
+Warning: In design 'MIPS', port 'output_reg[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'MIPS', port 'output_reg[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'MIPS', port 'output_reg[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'MIPS', port 'output_reg[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'MIPS', port 'output_reg[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'MIPS', port 'output_reg[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'MIPS', port 'output_reg[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'MIPS', port 'output_reg[2]' is not connected to any nets. (LINT-28)
+1

@@ -1,0 +1,6 @@
+PATTERN.sv
+/RAID2/COURSE/dcs/dcs064/Lab05/00_TESTBED/PATTERN.sv
+inter.sv
+/RAID2/COURSE/dcs/dcs064/Lab05/03_GATE/inter.sv
+mem_slave.sv
+/RAID2/COURSE/dcs/dcs064/Lab05/01_RTL/mem_slave.sv

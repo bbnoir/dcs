@@ -1,0 +1,16 @@
+ 
+****************************************
+check_design summary:
+Version:     R-2020.09
+Date:        Thu Mar 23 15:48:46 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               2
+    Cells do not drive (LINT-1)                                     2
+--------------------------------------------------------------------------------
+
+Warning: In design 'Seq', cell 'B_5' does not drive any nets. (LINT-1)
+Warning: In design 'Seq', cell 'B_6' does not drive any nets. (LINT-1)
+1

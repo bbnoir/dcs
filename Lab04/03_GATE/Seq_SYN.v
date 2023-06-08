@@ -1,0 +1,1 @@
+../02_SYN/Netlist/Seq_SYN.v

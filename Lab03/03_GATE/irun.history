@@ -1,0 +1,1 @@
+s1(16Mar2023:15:24:41):  irun TESTBED.sv -define GATE -debug -v /RAID2/COURSE/iclab/iclabta01/umc018/Verilog/umc18_neg.v 

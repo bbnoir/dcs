@@ -1,0 +1,10 @@
+PATTERN.sv
+/RAID2/COURSE/dcs/dcs064/Lab10/00_TESTBED/PATTERN.sv
+CDC.sv
+/RAID2/COURSE/dcs/dcs064/Lab10/01_RTL/CDC.sv
+synchronizer.v
+/RAID2/COURSE/dcs/dcs064/Lab10/01_RTL/synchronizer.v
+./CDC.sv
+/RAID2/COURSE/dcs/dcs064/Lab10/01_RTL/CDC.sv
+./synchronizer.v
+/RAID2/COURSE/dcs/dcs064/Lab10/01_RTL/synchronizer.v

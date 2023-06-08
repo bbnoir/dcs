@@ -1,0 +1,5 @@
+s1(30Mar2023:01:26:46):  irun TESTBENCH.sv -define RTL -debug 
+s2(30Mar2023:01:28:58):  irun TESTBENCH.sv -define RTL -debug 
+s3(30Mar2023:01:29:38):  irun TESTBENCH.sv -define RTL -debug 
+s4(30Mar2023:23:37:46):  irun TESTBENCH.sv -define RTL -debug 
+s5(30Mar2023:23:45:59):  irun TESTBENCH.sv -define RTL -debug 

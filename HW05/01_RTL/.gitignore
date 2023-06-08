@@ -1,0 +1,14 @@
+01_run
+09_clean_up
+PATTERN.sv
+TESTBED.sv
+irun*
+*.fsdb
+*.log
+INCA_libs/
+nWaveLog/
+.nfs*
+BSSLib*/
+*.conf
+verdiLog/
+*.rc

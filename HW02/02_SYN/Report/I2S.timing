@@ -1,0 +1,47 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : I2S
+Version: R-2020.09
+Date   : Thu Mar 30 12:39:48 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out_left[31]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[1]/CK (DFFRHQX1)               0.00       0.00 r
+  state_reg[1]/Q (DFFRHQX1)                0.47       0.47 r
+  U133/Y (NOR2BX1)                         0.29       0.76 r
+  U136/Y (NAND2X2)                         0.44       1.20 f
+  U137/Y (INVXL)                           0.23       1.43 r
+  U138/Y (AND2X1)                          0.53       1.96 r
+  out_left[31] (out)                       0.00       1.96 r
+  data arrival time                                   1.96
+
+  clock clk (rise edge)                    4.00       4.00
+  clock network delay (ideal)              0.00       4.00
+  output external delay                   -2.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.96
+  -----------------------------------------------------------
+  slack (MET)                                         0.04
+
+
+1

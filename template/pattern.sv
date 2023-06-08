@@ -1,0 +1,1 @@
+/RAID2/COURSE/dcs/dcs064/Lab06/00_TESTBED/pattern.sv

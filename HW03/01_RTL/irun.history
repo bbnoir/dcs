@@ -1,0 +1,1 @@
+s1(04May2023:20:17:34):  irun TESTBENCH.sv -define RTL -debug -loadpli1 debpli:novas_pli_boot 

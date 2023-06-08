@@ -1,0 +1,59 @@
+#!/bin/bash
+
+DUE_DATE_1="2023/03/16 16:20:00"
+DUE_DATE_2="2023/03/16 23:59:59"
+LAB=Lab03
+DESIGN=Counter
+NTP=140.113.54.213
+
+set -e
+due_date_num_1=$(date -d "$DUE_DATE_1" +"%Y%m%d%H%M%S")
+due_date_dis_1=$(date -d "$DUE_DATE_1")
+due_date_num_2=$(date -d "$DUE_DATE_2" +"%Y%m%d%H%M%S")
+due_date_dis_2=$(date -d "$DUE_DATE_2")
+date_now=$(ntpq -c "rv 0 clock" $NTP | cut -d" " -f2-)
+date_now_num=$(date -d "$date_now" +"%Y%m%d%H%M%S")
+date_now_dis=$(date -d "$date_now")
+if [ $due_date_num_1 -ge $date_now_num ]; then
+    demo=demo1
+elif [ $due_date_num_2 -ge $date_now_num ]; then
+    demo=demo2
+else
+    echo -e "The 1st demo deadline is \e[31m"$due_date_dis_1" \e[0m, and the 2nd demo deadline is \e[31m"$due_date_dis_2" \e[0m"
+    echo -e "It is \e[31m"$date_now_dis" \e[0mnow!"
+    echo -e "The submission is not accepted since \e[31mthe 2nd demo deadline is over\e[0m."
+    exit 1
+fi
+
+ID=$(whoami)
+name_target="$DESIGN"_"$ID".sv
+source_file="$DESIGN".sv
+target_file=~dcsta03/UpLoaD/"$LAB"/"$demo"/"$name_target"
+if [ ! -f $source_file ]; then
+    echo -e "\e[31mNo design file\e[0m!"
+    exit 1
+fi
+echo -e "\e[32m"
+cat $source_file
+echo -e "\e[0m"
+echo "--------------------------------------------------------"
+echo -e "The 1st demo deadline is \e[31m"$due_date_dis_1" \e[0m, and the 2nd demo deadline is \e[31m"$due_date_dis_2" \e[0m"
+echo -e "It is \e[31m"$date_now_dis" \e[0mnow!"
+echo -e "It will upload to \e[31m"$demo"\e[0m."
+echo -e "It will \e[31moverwrite\e[0m your file if you have uploaded before."
+read -p "Is this the file you want to upload?(y/n):" ans
+if [ -z "$ans" ]; then
+    echo -e "\e[31mWrong answer\e[0m."
+    exit 1
+fi
+if  [ $ans != n ] && [ $ans != N ] && [ $ans != Y ] && [ $ans != y ]; then
+    echo -e "\e[31mWrong answer\e[0m."
+    exit 1
+fi
+if [ $ans == n ] || [ $ans == N ]; then
+    echo -e "\e[31mAbort the process\e[0m without uploading."
+    exit 1
+fi
+
+cp $source_file $target_file
+echo -e "\e[34m\e[05mUpload done!\e[0m"

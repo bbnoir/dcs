@@ -1,0 +1,2 @@
+cp W_input.txt input.txt
+cp W_output.txt output.txt

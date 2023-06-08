@@ -1,0 +1,15 @@
+*design* DebussyLib (btIdent Verdi3_K-2015.09-SP2)
+Command arguments:
+    +define+verilog
+    /home/RAID2/COURSE/dcs/dcsta02/TA/Lab03/01_RTL/Counter.sv
+    /home/RAID2/COURSE/dcs/dcsta02/TA/Lab03/01_RTL/PATTERN.sv
+    /home/RAID2/COURSE/dcs/dcsta02/TA/Lab03/01_RTL/TESTBENCH.sv
+    -sv
+
+
+*Error* Module PATTERN redefined
+"PATTERN.sv", 2: 
+Highest level modules:
+TESTBED
+
+Total	1 error(s),   0 warning(s)

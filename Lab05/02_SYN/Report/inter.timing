@@ -1,0 +1,47 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : inter
+Version: R-2020.09
+Date   : Thu Mar 30 23:45:51 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: in_valid_2 (input port clocked by clk)
+  Endpoint: data_1_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     2.50       2.50 r
+  in_valid_2 (in)                          0.00       2.50 r
+  U78/Y (OR2XL)                            0.17       2.67 r
+  U76/Y (NOR2BXL)                          0.84       3.51 r
+  U93/Y (INVXL)                            0.33       3.84 f
+  U125/Y (OAI2BB1XL)                       0.32       4.16 f
+  data_1_reg_reg[0]/D (DFFRHQXL)           0.00       4.16 f
+  data arrival time                                   4.16
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  data_1_reg_reg[0]/CK (DFFRHQXL)          0.00       5.00 r
+  library setup time                      -0.28       4.72
+  data required time                                  4.72
+  -----------------------------------------------------------
+  data required time                                  4.72
+  data arrival time                                  -4.16
+  -----------------------------------------------------------
+  slack (MET)                                         0.55
+
+
+1

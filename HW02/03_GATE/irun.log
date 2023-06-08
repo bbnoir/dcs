@@ -1,0 +1,144 @@
+irun: 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun	15.20-s084: Started on Mar 30, 2023 at 12:35:56 CST
+irun
+	TESTBED.sv
+	-define GATE
+	-debug
+	-v /RAID2/COURSE/iclab/iclabta01/umc018/Verilog/umc18_neg.v
+Recompiling... reason: file './I2S_SYN.sdf' is newer than expected.
+	expected: Thu Mar 30 12:14:52 2023
+	actual:   Thu Mar 30 12:45:11 2023
+file: TESTBED.sv
+	module worklib.I2S:v
+		errors: 0, warnings: 0
+file: /RAID2/COURSE/iclab/iclabta01/umc018/Verilog/umc18_neg.v
+	module umc18_neg.NAND3X2:v
+		errors: 0, warnings: 0
+		Caching library 'umc18_neg' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+  DFFTRX1 data_reg_32_ ( .D(data[31]), .RN(n31), .CK(clk), .Q(data[32]) );
+                     |
+ncelab: *W,CUVWSP (./I2S_SYN.v,27|21): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/iclab/iclabta01/umc018/Verilog/umc18_neg.v,9402): QN
+
+  DFFTRX1 data_reg_0_ ( .D(SD), .RN(n30), .CK(clk), .Q(data[0]) );
+                    |
+ncelab: *W,CUVWSP (./I2S_SYN.v,90|20): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/iclab/iclabta01/umc018/Verilog/umc18_neg.v,9402): QN
+
+	Top level design units:
+		TESTBENCH
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Reading SDF file from location "I2S_SYN.sdf"
+	Compiled SDF file "I2S_SYN.sdf.X" older than source SDF file "I2S_SYN.sdf".
+	Recompiling.
+	Writing compiled SDF file to "I2S_SYN.sdf.X".
+	Annotating SDF timing data:
+		Compiled SDF file:     I2S_SYN.sdf.X
+		Log file:              
+		Backannotation scope:  TESTBENCH.I_I2S
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 240  Annotated = 100.00% -- No. of Tchecks = 216  Annotated = 100.00% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	         240	         240	      100.00
+		      $width	          75	          75	      100.00
+		  $setuphold	         141	         141	      100.00
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                 121      19
+		UDPs:                     36       2
+		Primitives:              299       6
+		Timing outputs:          151       8
+		Registers:                67      35
+		Scalar wires:            414       -
+		Expanded wires:           64       2
+		Vectored wires:            2       -
+		Always blocks:             2       2
+		Initial blocks:            5       5
+		Pseudo assignments:       16      16
+		Timing checks:           357     109
+		Interconnect:            276       -
+		Delayed tcheck signals:  108      40
+		Simulation timescale:    1ps
+	Writing initial simulation snapshot: worklib.TESTBENCH:sv
+Loading snapshot worklib.TESTBENCH:sv .................... Done
+SVSEED default: 1
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /RAID2/EDA/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_P-2019.06, Linux, 05/26/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'I2S_SYN.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +mda dumping.
+*Verdi* : End of traversing.
+                                                             [33m`-                                                                            
+                                                             /NN.                                                                           
+                                                            sMMM+                                                                           
+ .``                                                       sMMMMy                                                                           
+ oNNmhs+:-`                                               oMMMMMh                                                                           
+  /mMMMMMNNd/:-`                                         :+smMMMh                                                                           
+   .sNMMMMMN::://:-`                                    .o--:sNMy                                                                           
+     -yNMMMM:----::/:-.                                 o:----/mo                                                                           
+       -yNMMo--------://:.                             -+------+/                                                                           
+         .omd/::--------://:`                          o-------o.                                                                           
+           `/+o+//::-------:+:`                       .+-------y                                                                            
+              .:+++//::------:+/.---------.`          +:------/+                                                                            
+                 `-/+++/::----:/:::::::::::://:-.     o------:s.          [37m:::::----.           -::::.          `-:////:-`     `.:////:-.    [33m
+                    `.:///+/------------------:::/:- `o-----:/o          [37m.NNNNNNNNNNds-       -NNNNNd`       -smNMMMMMMNy   .smNNMMMMMNh    [33m
+                         :+:----------------------::/:s-----/s.          [37m.MMMMo++sdMMMN-     `mMMmMMMs      -NMMMh+///oys  `mMMMdo///oyy    [33m
+                        :/---------------------------:++:--/++           [37m.MMMM.   `mMMMy     yMMM:dMMM/     +MMMM:      `  :MMMM+`     `    [33m
+                       :/---///:-----------------------::-/+o`           [37m.MMMM.   -NMMMo    +MMMs -NMMm.    .mMMMNdo:.     `dMMMNds/-`      [33m
+                      -+--/dNs-o/------------------------:+o`            [37m.MMMMyyyhNMMNy`   -NMMm`  sMMMh     .odNMMMMNd+`   `+dNMMMMNdo.    [33m
+                     .o---yMMdsdo------------------------:s`             [37m.MMMMNmmmdho-    `dMMMdooosMMMM+      `./sdNMMMd.    `.:ohNMMMm-   [33m
+                    -yo:--/hmmds:----------------//:------o              [37m.MMMM:...`       sMMMMMMMMMMMMMN-  ``     `:MMMM+ ``      -NMMMs   [33m
+                   /yssy----:::-------o+-------/h/-hy:---:+              [37m.MMMM.          /MMMN:------hMMMd` +dy+:::/yMMMN- :my+:::/sMMMM/   [33m
+                  :ysssh:------//////++/-------sMdyNMo---o.              [37m.MMMM.         .mMMMs       .NMMMs /NMMMMMMMMmh:  -NMMMMMMMMNh/    [33m
+                  ossssh:-------ddddmmmds/:----:hmNNh:---o               [37m`::::`         .::::`        -:::: `-:/++++/-.     .:/++++/-.      [33m
+                  /yssyo--------dhhyyhhdmmhy+:---://----+-                                                                                  
+                  `yss+---------hoo++oosydms----------::s    `.....-.                                                                       
+                   :+-----------y+++++++oho--------:+sssy.://:::://+o.                                                                      
+                    //----------y++++++os/--------+yssssy/:--------:/s-                                                                     
+             `..:::::s+//:::----+s+++ooo:--------+yssssy:-----------++                                                                      
+           `://::------::///+/:--+soo+:----------ssssys/---------:o+s.``                                                                    
+          .+:----------------/++/:---------------:sys+----------:o/////////::::-...`                                                        
+          o---------------------oo::----------::/+//---------::o+--------------:/ohdhyo/-.``                                                
+          o---------------------/s+////:----:://:---------::/+h/------------------:oNMMMMNmhs+:.`                                           
+          -+:::::--------------:s+-:::-----------------:://++:s--::------------::://sMMMMMMMMMMNds/`                                        
+           .+++/////////////+++s/:------------------:://+++- :+--////::------/ydmNNMMMMMMMMMMMMMMmo`                                        
+             ./+oo+++oooo++/:---------------------:///++/-   o--:///////::----sNMMMMMMMMMMMMMMMmo.                                          
+                o::::::--------------------------:/+++:`    .o--////////////:--+mMMMMMMMMMMMMmo`                                            
+               :+--------------------------------/so.       +:-:////+++++///++//+mMMMMMMMMMmo`                                              
+              .s----------------------------------+: ````` `s--////o:.-:/+syddmNMMMMMMMMMmo`                                                
+              o:----------------------------------s. :s+/////--//+o-       `-:+shmNNMMMNs.                                                  
+             //-----------------------------------s` .s///:---:/+o.               `-/+o.                                                    
+            .o------------------------------------o.  y///+//:/+o`                                                                          
+            o-------------------------------------:/  o+//s//+++`                                                                           
+           //--------------------------------------s+/o+//s`                                                                                
+          -+---------------------------------------:y++///s                                                                                 
+          o-----------------------------------------oo/+++o                                                                                 
+         `s-----------------------------------------:s   ``                                                                                 
+          o-:::::------------------:::::-------------o.                                                                                     
+          .+//////////::::::://///////////////:::----o`                                                                                     
+          `:soo+///////////+++oooooo+/////////////:-//                                                                                      
+       -/os/--:++/+ooo:::---..:://+ooooo++///////++so-`                                                                                     
+      syyooo+o++//::-                 ``-::/yoooo+/:::+s/.                                                                                  
+       `..``                                `-::::///:++sys:                                                                                
+                                                    `.:::/o+  [37m                                                                              
+--------------------------------------------------------------------------------------------------------------------------------------------
+                                                            Congratulations!                                                                
+                                                     You have passed all patterns!                                                          
+--------------------------------------------------------------------------------------------------------------------------------------------
+Simulation complete via $finish(1) at time 72490 NS + 0
+ncsim> exit
+TOOL:	irun	15.20-s084: Exiting on Mar 30, 2023 at 12:35:57 CST  (total: 00:00:01)

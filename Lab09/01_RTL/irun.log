@@ -1,0 +1,115 @@
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s084: Started on May 11, 2023 at 15:32:00 CST
+irun
+	TESTBENCH.sv
+	-define RTL
+	-debug
+	-notimingchecks
+	-loadpli1 debpli:novas_pli_boot
+file: TESTBENCH.sv
+	module worklib.PATTERN:sv
+		errors: 0, warnings: 0
+	module worklib.P_MUL:sv
+		errors: 0, warnings: 0
+	module worklib.TESTBENCH:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		TESTBENCH
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: ....................
+		in_3[47:32] = $random;
+		   |
+ncelab: *W,BNDWRN (./PATTERN.sv,121|5): Bit-select or part-select index out of declared bounds.
+ Done
+	Generating native compiled code:
+		worklib.PATTERN:sv <0x718cee3b>
+			streams:  13, words: 62090
+		worklib.P_MUL:sv <0x19e9da35>
+			streams:  29, words: 21156
+		worklib.TESTBENCH:sv <0x5ced04cb>
+			streams:  19, words:  5047
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 3       3
+		Registers:              74      74
+		Scalar wires:           13       -
+		Vectored wires:         36       -
+		Always blocks:           5       5
+		Initial blocks:          5       5
+		Cont. assignments:      22      22
+		Pseudo assignments:     18      18
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.TESTBENCH:sv
+Loading snapshot worklib.TESTBENCH:sv .................... Done
+SVSEED default: 1
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_P-2019.06, Linux x86_64/64bit, 05/26/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'P_MUL.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +mda dumping.
+*Verdi* : End of traversing.
+[37m                                                                                                                                          
+[37m                                                                                [32m      :BBQvi.                                              
+[37m                                                              .i7ssrvs7         [32m     BBBBBBBBQi                                           
+[37m                        .:r7rrrr:::.        .::::::...   .i7vr:.      .B:       [32m    :BBBP :7BBBB.                                         
+[37m                      .Kv.........:rrvYr7v7rr:.....:rrirJr.   .rgBBBBg  Bi      [32m    BBBB     BBBB                                         
+[37m                     7Q  :rubEPUri:.       ..:irrii:..    :bBBBBBBBBBBB  B      [32m   iBBBv     BBBB       vBr                               
+[37m                    7B  BBBBBBBBBBBBBBB::BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB :R     [32m   BBBBBKrirBBBB.     :BBBBBB:                            
+[37m                   Jd .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: Bi    [32m  rBBBBBBBBBBBR.    .BBBM:BBB                             
+[37m                  uZ .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB .B    [32m  BBBB   .::.      EBBBi :BBU                             
+[37m                 7B .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  B    [32m MBBBr           vBBBu   BBB.                             
+[37m                .B  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: JJ   [32m i7PB          iBBBBB.  iBBB                              
+[37m                B. BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  Lu             [32m  vBBBBPBBBBPBBB7       .7QBB5i                
+[37m               Y1 KBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBi XBBBBBBBi :B            [32m :RBBB.  .rBBBBB.      rBBBBBBBB7              
+[37m              :B .BBBBBBBBBBBBBsRBBBBBBBBBBBrQBBBBB. UBBBRrBBBBBBr 1BBBBBBBBB  B.          [32m    .       BBBB       BBBB  :BBBB             
+[37m              Bi BBBBBBBBBBBBBi :BBBBBBBBBBE .BBK.  .  .   QBBBBBBBBBBBBBBBBBB  Bi         [32m           rBBBr       BBBB    BBBU            
+[37m             .B .BBBBBBBBBBBBBBQBBBBBBBBBBBB       [38;2;242;172;172mBBv [37m.LBBBBBBBBBBBBBBBBBBBBBB. B7.:ii:   [32m           vBBB        .BBBB   :7i.            
+[37m            .B  PBBBBBBBBBBBBBBBBBBBBBBBBBBBBbYQB. [38;2;242;172;172mBB: [37mBBBBBBBBBBBBBBBBBBBBBBBBB  Jr:::rK7 [32m             .7  BBB7   iBBBg                  
+[37m           7M  PBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  [38;2;242;172;172mBB. [37mBBBBBBBBBBBBBBBBBBBBBBB..i   .   v1                  [32mdBBB.   5BBBr                 
+[37m          sZ .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  [38;2;242;172;172mBB. [37mBBBBBBBBBBBBBBBBBBBBBBBBBBB iD2BBQL.                 [32m ZBBBr  EBBBv     YBBBBQi     
+[37m  .7YYUSIX5 .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  [38;2;242;172;172mBB. [37mBBBBBBBBBBBBBBBBBBBBBBBBY.:.      :B                 [32m  iBBBBBBBBD     BBBBBBBBB.   
+[37m LB.        ..BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB. [38;2;242;172;172mBB: [37mBBBBBBBBBBBBBBBBBBBBBBBBMBBB. BP17si                 [32m    :LBBBr      vBBBi  5BBB   
+[37m  KvJPBBB :BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: [38;2;242;172;172mZB: [37mBBBBBBBBBBBBBBBBBBBBBBBBBsiJr .i7ssr:                [32m          ...   :BBB:   BBBu  
+[37m i7ii:.   ::BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBj [38;2;242;172;172muBi [37mQBBBBBBBBBBBBBBBBBBBBBBBBi.ir      iB                [32m         .BBBi   BBBB   iMBu  
+[37mDB    .  vBdBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBg [38;2;242;172;172m7Bi [37mBBBBBBBBBBBBBBBBBBBBBBBBBBBBB rBrXPv.                [32m          BBBX   :BBBr        
+[37m :vQBBB. BQBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBQ [38;2;242;172;172miB: [37mBBBBBBBBBBBBBBBBBBBBBBBBBBBBB .L:ii::irrrrrrrr7jIr   [32m          .BBBv  :BBBQ        
+[37m :7:.   .. 5BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  [38;2;242;172;172mBr [37mBBBBBBBBBBBBBBBBBBBBBBBBBBBB:            ..... ..YB. [32m           .BBBBBBBBB:        
+[37mBU  .:. BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  [38;2;242;172;172mB7 [37mgBBBBBBBBBBBBBBBBBBBBBBBBBB. gBBBBBBBBBBBBBBBBBB. BL [32m             rBBBBB1.         
+[37m rY7iB: BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: [38;2;242;172;172mB7 [37mBBBBBBBBBBBBBBBBBBBBBBBBBB. QBBBBBBBBBBBBBBBBBi  v5                                
+[37m     us EBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB [38;2;242;172;172mIr [37mBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBgu7i.:BBBBBBBr Bu                                 
+[37m      B  7BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB.[38;2;242;172;172m:i [37mBBBBBBBBBBBBBBBBBBBBBBBBBBBv:.  .. :::  .rr    rB                                  
+[37m      us  .BBBBBBBBBBBBBQLXBBBBBBBBBBBBBBBBBBBBBBBBq  .BBBBBBBBBBBBBBBBBBBBBBBBBv  :iJ7vri:::1Jr..isJYr                                   
+[37m      B  BBBBBBB  MBBBM      qBBBBBBBBBBBBBBBBBBBBBB: BBBBBBBBBBBBBBBBBBBBBBBBBB  B:           iir:                                       
+[37m     iB iBBBBBBBL       BBBP. :BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  B.                                                       
+[37m     P: BBBBBBBBBBB5v7gBBBBBB  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: Br                                                        
+[37m     B  BBBs 7BBBBBBBBBBBBBB7 :BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB .B                                                         
+[37m    .B :BBBB.  EBBBBBQBBBBBJ .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB. B.                                                         
+[37m    ij qBBBBBg          ..  .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB .B                                                          
+[37m    UY QBBBBBBBBSUSPDQL...iBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK EL                                                          
+[37m    B7 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: B:                                                          
+[37m    B  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBYrBB vBBBBBBBBBBBBBBBBBBBBBBBB. Ls                                                          
+[37m    B  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBi_  /UBBBBBBBBBBBBBBBBBBBBBBBBB. :B:                                                        
+[37m   rM .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  ..IBBBBBBBBBBBBBBBBQBBBBBBBBBB  B                                                        
+[37m   B  BBBBBBBBBdZBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBPBBBBBBBBBBBBEji:..     sBBBBBBBr Br                                                       
+[37m  7B 7BBBBBBBr     .:vXQBBBBBBBBBBBBBBBBBBBBBBBBBQqui::..  ...i:i7777vi  BBBBBBr Bi                                                       
+[37m  Ki BBBBBBB  rY7vr:i....  .............:.....  ...:rii7vrr7r:..      7B  BBBBB  Bi                                                       
+[37m  B. BBBBBB  B:    .::ir77rrYLvvriiiiiiirvvY7rr77ri:..                 bU  iQBB:..rI                                                      
+[37m.S: 7BBBBP  B.                                                          vI7.  .:.  B.                                                     
+[37mB: ir:.   :B.                                                             :rvsUjUgU.                                                      
+[37mrMvrrirJKur                                                                                                                               [m
+----------------------------------------------------------------------------------------------------------------------
+                                                  Congratulations!                						             
+                                           You have passed all patterns!          						             
+----------------------------------------------------------------------------------------------------------------------
+Simulation complete via $finish(1) at time 4547250 PS + 0
+./PATTERN.sv:211 $finish;	
+ncsim> exit
+TOOL:	irun(64)	15.20-s084: Exiting on May 11, 2023 at 15:32:02 CST  (total: 00:00:02)

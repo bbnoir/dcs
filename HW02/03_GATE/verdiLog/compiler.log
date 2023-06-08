@@ -1,0 +1,546 @@
+*design* DebussyLib (btIdent Verdi_P-2019.06)
+Command arguments:
+    +define+verilog
+    /RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v
+    /RAID2/COURSE/dcs/dcs064/HW02/03_GATE/PATTERN.sv
+    /RAID2/COURSE/dcs/dcs064/HW02/03_GATE/TESTBED.sv
+    -sv
+
+Highest level modules:
+TESTBENCH
+
+
+*Error* view DFFHQX1 is not defined for instance SD_reg_reg
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 22: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_1_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 23: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_2_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 24: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_3_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 25: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_4_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 26: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_5_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 27: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_6_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 28: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_7_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 29: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_8_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 30: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_9_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 31: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_10_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 32: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_11_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 33: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_12_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 34: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_13_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 35: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_14_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 36: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_15_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 37: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_16_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 38: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_17_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 39: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_18_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 40: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_19_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 41: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_20_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 42: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_21_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 43: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_22_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 44: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_23_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 45: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_24_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 46: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_25_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 47: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_26_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 48: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_27_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 49: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_28_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 50: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_29_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 51: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_30_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 52: 
+
+*Error* view DFFHQX1 is not defined for instance data_reg_31_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 53: 
+
+*Error* view DFFRHQX1 is not defined for instance state_reg_2_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 54: 
+
+*Error* view DFFRHQXL is not defined for instance state_reg_0_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 56: 
+
+*Error* view DFFRHQXL is not defined for instance state_reg_1_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 59: 
+
+*Error* view DFFX1 is not defined for instance data_reg_0_
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 58: 
+
+*Error* view NOR2XL is not defined for instance U114
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 61: 
+
+*Error* view AOI221X4 is not defined for instance U115
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 62: 
+
+*Error* view OAI22XL is not defined for instance U116
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 64: 
+
+*Error* view OAI22XL is not defined for instance U119
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 68: 
+
+*Error* view INVXL is not defined for instance U117
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 66: 
+
+*Error* view INVXL is not defined for instance U154
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 106: 
+
+*Error* view INVXL is not defined for instance U156
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 108: 
+
+*Error* view INVXL is not defined for instance U158
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 110: 
+
+*Error* view INVXL is not defined for instance U163
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 115: 
+
+*Error* view INVXL is not defined for instance U165
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 117: 
+
+*Error* view INVXL is not defined for instance U167
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 119: 
+
+*Error* view INVXL is not defined for instance U169
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 121: 
+
+*Error* view INVXL is not defined for instance U171
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 123: 
+
+*Error* view INVXL is not defined for instance U173
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 125: 
+
+*Error* view INVXL is not defined for instance U175
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 127: 
+
+*Error* view INVXL is not defined for instance U177
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 129: 
+
+*Error* view INVXL is not defined for instance U179
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 131: 
+
+*Error* view INVXL is not defined for instance U181
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 133: 
+
+*Error* view INVXL is not defined for instance U183
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 135: 
+
+*Error* view INVXL is not defined for instance U185
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 137: 
+
+*Error* view INVXL is not defined for instance U187
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 139: 
+
+*Error* view INVXL is not defined for instance U189
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 141: 
+
+*Error* view INVXL is not defined for instance U191
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 143: 
+
+*Error* view INVXL is not defined for instance U193
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 145: 
+
+*Error* view INVXL is not defined for instance U195
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 147: 
+
+*Error* view INVXL is not defined for instance U197
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 149: 
+
+*Error* view INVXL is not defined for instance U199
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 151: 
+
+*Error* view INVXL is not defined for instance U201
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 153: 
+
+*Error* view INVXL is not defined for instance U203
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 155: 
+
+*Error* view INVXL is not defined for instance U205
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 157: 
+
+*Error* view INVXL is not defined for instance U207
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 159: 
+
+*Error* view INVXL is not defined for instance U209
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 161: 
+
+*Error* view INVXL is not defined for instance U211
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 163: 
+
+*Error* view INVXL is not defined for instance U213
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 165: 
+
+*Error* view INVXL is not defined for instance U215
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 167: 
+
+*Error* view INVXL is not defined for instance U217
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 169: 
+
+*Error* view INVXL is not defined for instance U219
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 171: 
+
+*Error* view INVXL is not defined for instance U221
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 173: 
+
+*Error* view NAND2XL is not defined for instance U118
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 67: 
+
+*Error* view AOI32X1 is not defined for instance U120
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 70: 
+
+*Error* view AOI211X1 is not defined for instance U121
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 72: 
+
+*Error* view AND2XL is not defined for instance U122
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 74: 
+
+*Error* view AND2XL is not defined for instance U123
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 75: 
+
+*Error* view AND2XL is not defined for instance U124
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 76: 
+
+*Error* view AND2XL is not defined for instance U125
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 77: 
+
+*Error* view AND2XL is not defined for instance U126
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 78: 
+
+*Error* view AND2XL is not defined for instance U127
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 79: 
+
+*Error* view AND2XL is not defined for instance U128
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 80: 
+
+*Error* view AND2XL is not defined for instance U129
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 81: 
+
+*Error* view AND2XL is not defined for instance U130
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 82: 
+
+*Error* view AND2XL is not defined for instance U131
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 83: 
+
+*Error* view AND2XL is not defined for instance U132
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 84: 
+
+*Error* view AND2XL is not defined for instance U133
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 85: 
+
+*Error* view AND2XL is not defined for instance U134
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 86: 
+
+*Error* view AND2XL is not defined for instance U135
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 87: 
+
+*Error* view AND2XL is not defined for instance U136
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 88: 
+
+*Error* view AND2XL is not defined for instance U137
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 89: 
+
+*Error* view AND2XL is not defined for instance U138
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 90: 
+
+*Error* view AND2XL is not defined for instance U139
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 91: 
+
+*Error* view AND2XL is not defined for instance U140
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 92: 
+
+*Error* view AND2XL is not defined for instance U141
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 93: 
+
+*Error* view AND2XL is not defined for instance U142
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 94: 
+
+*Error* view AND2XL is not defined for instance U143
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 95: 
+
+*Error* view AND2XL is not defined for instance U144
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 96: 
+
+*Error* view AND2XL is not defined for instance U145
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 97: 
+
+*Error* view AND2XL is not defined for instance U146
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 98: 
+
+*Error* view AND2XL is not defined for instance U147
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 99: 
+
+*Error* view AND2XL is not defined for instance U148
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 100: 
+
+*Error* view AND2XL is not defined for instance U149
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 101: 
+
+*Error* view AND2XL is not defined for instance U150
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 102: 
+
+*Error* view AND2XL is not defined for instance U151
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 103: 
+
+*Error* view AND2XL is not defined for instance U152
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 104: 
+
+*Error* view NAND2X4 is not defined for instance U153
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 105: 
+
+*Error* view NAND2X4 is not defined for instance U161
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 113: 
+
+*Error* view NOR2X1 is not defined for instance U155
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 107: 
+
+*Error* view NOR2X1 is not defined for instance U160
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 112: 
+
+*Error* view NOR2X1 is not defined for instance U162
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 114: 
+
+*Error* view NOR2X1 is not defined for instance U164
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 116: 
+
+*Error* view NOR2X1 is not defined for instance U166
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 118: 
+
+*Error* view NOR2X1 is not defined for instance U168
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 120: 
+
+*Error* view NOR2X1 is not defined for instance U170
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 122: 
+
+*Error* view NOR2X1 is not defined for instance U172
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 124: 
+
+*Error* view NOR2X1 is not defined for instance U174
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 126: 
+
+*Error* view NOR2X1 is not defined for instance U176
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 128: 
+
+*Error* view NOR2X1 is not defined for instance U178
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 130: 
+
+*Error* view NOR2X1 is not defined for instance U180
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 132: 
+
+*Error* view NOR2X1 is not defined for instance U182
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 134: 
+
+*Error* view NOR2X1 is not defined for instance U184
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 136: 
+
+*Error* view NOR2X1 is not defined for instance U186
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 138: 
+
+*Error* view NOR2X1 is not defined for instance U188
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 140: 
+
+*Error* view NOR2X1 is not defined for instance U190
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 142: 
+
+*Error* view NOR2X1 is not defined for instance U192
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 144: 
+
+*Error* view NOR2X1 is not defined for instance U194
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 146: 
+
+*Error* view NOR2X1 is not defined for instance U196
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 148: 
+
+*Error* view NOR2X1 is not defined for instance U198
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 150: 
+
+*Error* view NOR2X1 is not defined for instance U200
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 152: 
+
+*Error* view NOR2X1 is not defined for instance U202
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 154: 
+
+*Error* view NOR2X1 is not defined for instance U204
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 156: 
+
+*Error* view NOR2X1 is not defined for instance U206
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 158: 
+
+*Error* view NOR2X1 is not defined for instance U208
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 160: 
+
+*Error* view NOR2X1 is not defined for instance U210
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 162: 
+
+*Error* view NOR2X1 is not defined for instance U212
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 164: 
+
+*Error* view NOR2X1 is not defined for instance U214
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 166: 
+
+*Error* view NOR2X1 is not defined for instance U216
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 168: 
+
+*Error* view NOR2X1 is not defined for instance U218
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 170: 
+
+*Error* view NOR2X1 is not defined for instance U220
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 172: 
+
+*Error* view NOR2X1 is not defined for instance U222
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 174: 
+
+*Error* view NOR2X1 is not defined for instance U224
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 176: 
+
+*Error* view NOR2X1 is not defined for instance U225
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 177: 
+
+*Error* view NOR2X1 is not defined for instance U226
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 178: 
+
+*Error* view NOR2X1 is not defined for instance U227
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 179: 
+
+*Error* view NOR2X1 is not defined for instance U228
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 180: 
+
+*Error* view NOR2X1 is not defined for instance U229
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 181: 
+
+*Error* view NOR2X1 is not defined for instance U230
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 182: 
+
+*Error* view NOR2X1 is not defined for instance U231
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 183: 
+
+*Error* view NOR2X1 is not defined for instance U232
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 184: 
+
+*Error* view NOR2X1 is not defined for instance U233
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 185: 
+
+*Error* view NOR2X1 is not defined for instance U234
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 186: 
+
+*Error* view NOR2X1 is not defined for instance U235
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 187: 
+
+*Error* view NOR2X1 is not defined for instance U236
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 188: 
+
+*Error* view NOR2X1 is not defined for instance U237
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 189: 
+
+*Error* view NOR2X1 is not defined for instance U238
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 190: 
+
+*Error* view NOR2X1 is not defined for instance U239
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 191: 
+
+*Error* view NOR2X1 is not defined for instance U240
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 192: 
+
+*Error* view NOR2X1 is not defined for instance U241
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 193: 
+
+*Error* view NOR2X1 is not defined for instance U242
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 194: 
+
+*Error* view NOR2X1 is not defined for instance U243
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 195: 
+
+*Error* view NOR2X1 is not defined for instance U244
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 196: 
+
+*Error* view NOR2X1 is not defined for instance U245
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 197: 
+
+*Error* view NOR2X1 is not defined for instance U246
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 198: 
+
+*Error* view NOR2X1 is not defined for instance U247
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 199: 
+
+*Error* view NOR2X1 is not defined for instance U248
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 200: 
+
+*Error* view NOR2X1 is not defined for instance U249
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 201: 
+
+*Error* view NOR2X1 is not defined for instance U250
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 202: 
+
+*Error* view NOR2X1 is not defined for instance U251
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 203: 
+
+*Error* view NOR2X1 is not defined for instance U252
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 204: 
+
+*Error* view NOR2X1 is not defined for instance U253
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 205: 
+
+*Error* view NOR2X1 is not defined for instance U254
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 206: 
+
+*Error* view AND2X1 is not defined for instance U157
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 109: 
+
+*Error* view OAI21XL is not defined for instance U159
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 111: 
+
+*Error* view NOR2BX1 is not defined for instance U223
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/I2S_SYN.v", 175: 
+
+*Error* view PATTERN is not defined for instance I_PATTERN
+"/RAID2/COURSE/dcs/dcs064/HW02/03_GATE/TESTBED.sv", 42: 
+Total	178 error(s),   0 warning(s)

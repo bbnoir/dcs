@@ -1,0 +1,271 @@
+`ifdef RTL
+    `timescale 1ns/1fs
+    `include "SS.sv"  
+    `define CYCLE_TIME 5.0
+`endif
+`ifdef GATE
+    `timescale 1ns/1fs
+    `include "SS_SYN.sv"
+    `define CYCLE_TIME 5.0
+`endif
+
+//pragma protect
+//pragma protect begin
+
+// TO DO    : Dump file for Debuging
+// TO Solve : error calculation when golden is zero
+// TO Solve : NaN in IEEE 754 problem check
+
+
+// When I use the real tpye, it may cause undetected errors in the following condition
+// 1. golden = 0
+// 2. NaN appears
+
+
+module PATTERN(
+// output signals
+    clk,
+    rst_n,
+    in_valid,
+    matrix,
+    matrix_size,
+// input signals
+    out_valid,
+    out_value
+);
+//================================================================
+//   parameters & integers
+//================================================================
+integer t,i,j,k,l,m,n;
+integer patnum = 1000;
+integer seed = 3;
+integer i_pat;
+integer latency;
+integer total_latency;
+integer matrix_size_int,temp;
+integer cycle_input_x,cycle_input_w,cycle_output;
+//================================================================
+//   INPUT AND OUTPUT DECLARATION                         
+//================================================================
+output reg 		  clk, rst_n, in_valid;
+output reg [15:0] matrix;
+output reg   matrix_size;
+
+input 				out_valid;
+input [39:0] out_value;
+//================================================================
+//    wires % registers
+//================================================================
+reg  [15:0] Matrix_X [0:15][0:15];
+reg  [15:0] Matrix_W [0:15][0:15];
+reg  [39:0] Matrix_O_mul [0:15][0:15];
+reg  [39:0] Matrix_O_sum [0:30];
+reg [3:0]i_index[0:16];
+reg [3:0]w_index[0:16];
+reg [3:0]temp_reg;
+//================================================================
+//    clock
+//================================================================
+real CYCLE = `CYCLE_TIME;
+always #(CYCLE/2.0) clk = ~clk;
+//================================================================
+//    initial
+//================================================================
+initial begin
+  reset_task;
+
+  for (i_pat = 0; i_pat < patnum; i_pat = i_pat+1)
+	  begin
+	    input_task;
+        input_2_task;
+        wait_out_valid_task;
+        check_ans_task;
+        check_out_valid_task;
+        $display("\033[0;34mPASS PATTERN NO.%4d,\033[m \033[0;32mexecution cycle : %3d\033[m",i_pat ,latency);
+    end
+  YOU_PASS_task;
+end
+
+
+task reset_task; begin 
+
+    rst_n = 'b1;
+    in_valid = 'b0;
+    matrix = 'bx;
+    matrix_size = 'bx;
+    total_latency = 0;
+
+    force clk = 0;
+
+    #CYCLE; rst_n = 0; 
+    #CYCLE; rst_n = 1;
+    
+    if(out_valid !== 1'b0 || out_value !=='b0) begin //out!==0
+        $display("************************************************************");  
+        $display("                                                            ");    
+        $display("*  Output signal should be 0 after initial RESET  at %8t   *",$time);
+        $display("************************************************************");
+        repeat(2) #CYCLE;
+        $finish;
+    end
+
+    for (j=0; j<16 ;j=j+1) begin
+        for (k=0; k<16 ;k=k+1)begin
+            Matrix_W[j][k]=0;
+            Matrix_X[j][k]=0;
+        end
+    end 
+        
+	#CYCLE; release clk;
+end endtask
+
+
+task input_task; begin  
+
+    t = $urandom_range(1, 2);
+    repeat(t) @(negedge clk);
+    cycle_input_x=0;
+    cycle_input_w=0;
+    in_valid = 1'b1;
+    //matrix_size = t-1;
+    matrix_size_int = 5'b00001<<t;
+    
+    for (j=0; j<matrix_size_int ;j=j+1) begin
+        for (k=0; k<matrix_size_int ;k=k+1)begin
+            temp = $random(seed);
+            Matrix_X[j][k]= temp ;
+        end
+    end
+
+    for (j=0; j<matrix_size_int ;j=j+1) begin
+        for (k=0; k<matrix_size_int ;k=k+1)begin
+            temp = $random(seed);
+            Matrix_W[j][k]= temp ;
+        end
+    end
+
+    for (j=0; j<matrix_size_int ;j=j+1) begin
+        for (k=0; k<matrix_size_int ;k=k+1)begin
+            if(j==0 && k==0)begin
+                matrix_size = t-1;
+            end
+            else begin
+                 matrix_size = 'bx;
+            end
+            matrix = Matrix_X[j][k];
+            in_valid = 1'b1;
+            @(negedge clk);
+        end
+    end
+
+    for (j=0; j<matrix_size_int ;j=j+1) begin
+        for (k=0; k<matrix_size_int ;k=k+1)begin
+            matrix = Matrix_W[j][k];
+            in_valid = 1'b1;
+            @(negedge clk);
+        end
+    end
+
+    in_valid = 'b0;
+    matrix = 'bx;
+    matrix_size = 'bx;
+    @(negedge clk);
+end endtask
+
+task input_2_task; begin
+
+    for (i=0; i<16 ;i=i+1)
+        for (j=0; j<16 ;j=j+1)begin
+            Matrix_O_mul[i][j]= 0 ;
+        end
+
+    for (i=0; i<31 ;i=i+1)begin
+            Matrix_O_sum[i]= 0 ;
+        end
+
+    for (i=0; i<matrix_size_int ;i=i+1)
+        for (j=0; j<matrix_size_int ;j=j+1)
+            for (k=0; k<matrix_size_int ;k=k+1)begin
+                Matrix_O_mul[i][j]= Matrix_O_mul[i][j] + Matrix_X[i][k]*Matrix_W[k][j] ;
+        end
+    /*
+    for (i=0; i<(2*matrix_size_int-1) ;i=i+1)
+        for (j=0; j<i+1 ;j=j+1)begin
+                Matrix_O_sum[i]= Matrix_O_sum[i] + Matrix_O_mul[j][i-j];
+        end
+*/
+    for (k=0; k<31;k=k+1)
+        for (i=0; i<matrix_size_int;i=i+1)
+            for (j=0; j<matrix_size_int ;j=j+1)begin
+                if(k==i+j)
+                Matrix_O_sum[k]= Matrix_O_sum[k] + Matrix_O_mul[i][j];
+            end
+
+
+end endtask
+
+task wait_out_valid_task; begin
+    latency = 0;
+    while(out_valid !== 1'b1) begin
+		latency = latency + 1;
+		if( latency == 20) begin
+			$display("********************************************************");     
+			$display("                                                        ");
+			$display("*  The execution latency are over 100 cycles  at %8t   *",$time);//over max
+			$display("********************************************************");
+			$finish;
+		end
+     @(negedge clk);
+   end
+   total_latency = total_latency + latency;
+end endtask
+
+
+task check_ans_task; begin
+    cycle_output = 0;
+    while (cycle_output < (2*matrix_size_int-1))begin
+        if(out_value !== Matrix_O_sum[cycle_output]) begin
+            $display ("-----------------------------------------------------------------------------------------------------------------------");
+            $display ("                                                                      FAIL!                                            ");
+            $display ("                                                                 Golden Out :          %h                              ",Matrix_O_sum[cycle_output]); //show ans
+            $display ("                                                                 Your Out :            %h                              ", out_value); //show output
+            $display ("-----------------------------------------------------------------------------------------------------------------------");
+            repeat(2) @(negedge clk);
+            for (i=0; i<matrix_size_int;i=i+1) begin
+                for (j=0; j<matrix_size_int ;j=j+1)begin
+                    $display("i=%d, j=%d, value=%h",i,j,Matrix_O_mul[i][j]);
+                end
+            end
+            $finish;
+            
+        end
+        cycle_output = cycle_output +1;
+        @(negedge clk);
+    end
+
+end endtask 
+
+task check_out_valid_task; begin
+    if(out_valid === 'b1) begin
+        $display ("-------------------------------------------------------------------------------------------");
+        $display ("             out_valid should only be high when output is valid                            "); 
+        $display ("-------------------------------------------------------------------------------------------");
+        repeat(2)@(negedge clk);
+        $finish;
+    end
+end endtask
+
+
+task YOU_PASS_task; begin
+    $display ("--------------------------------------------------------------------");
+    $display ("                         Congratulations!                           ");
+    $display ("                  You have passed all patterns!                     ");
+    $display ("                  Total latency : %d cycles                     ", total_latency);
+    $display ("--------------------------------------------------------------------");        
+    repeat(2)@(negedge clk);
+    $finish;
+end endtask
+
+//pragma protect end
+
+endmodule

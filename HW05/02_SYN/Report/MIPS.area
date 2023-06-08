@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : MIPS
+Version: T-2022.03
+Date   : Fri May 12 08:37:29 2023
+****************************************
+
+Library(s) Used:
+
+    slow (File: /RAID2/COURSE/iclab/iclabta01/umc018/Synthesis/slow.db)
+
+Number of ports:                          121
+Number of nets:                          3214
+Number of cells:                         3030
+Number of combinational cells:           2854
+Number of sequential cells:               176
+Number of macros/black boxes:               0
+Number of buf/inv:                        404
+Number of references:                     105
+
+Combinational area:              47278.124066
+Buf/Inv area:                     4207.896141
+Noncombinational area:           11339.697788
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 58617.821855
+Total area:                 undefined
+1

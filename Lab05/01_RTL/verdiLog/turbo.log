@@ -1,0 +1,5 @@
+Command Line: /RAID2/EDA/synopsys/verdi/2020.12-sp2/platform/LINUXAMD64/bin/Novas
+uname(Linux linux03 2.6.32-696.el6.x86_64 #1 SMP Tue Mar 21 19:29:05 UTC 2017 x86_64)
+type= DND_STRING
+TESTBENCH.I_interconnect
+au time 1001.416765 36.720418 10.183452 delta 603373568 603373568 total 1087766528 1087766528

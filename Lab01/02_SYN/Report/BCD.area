@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : BCD
+Version: R-2020.09
+Date   : Wed Mar  1 00:06:11 2023
+****************************************
+
+Library(s) Used:
+
+    slow (File: /RAID2/COURSE/iclab/iclabta01/umc018/Synthesis/slow.db)
+
+Number of ports:                           20
+Number of nets:                           109
+Number of cells:                          100
+Number of combinational cells:            100
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         26
+Number of references:                      22
+
+Combinational area:               1370.476825
+Buf/Inv area:                      262.785609
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  1370.476825
+Total area:                 undefined
+1

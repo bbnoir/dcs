@@ -1,0 +1,166 @@
+ncsim 15.20-s084
+Linux 2.6.32-573.el6.x86_64 #1 SMP Thu Jul 23 15:44:03 UTC 2015 x86_64
+CPU cores: 8
+Limit information:
+======================================
+cputime			unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		10240 kbytes
+coredumpsize	0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		4096
+memorylocked	64 kbytes
+maxproc			1024
+======================================
+(Special)Runtime environment variables:
+ndpGetenv(LD_ASSUME_KERNEL): 2.6.18
+
+Runtime environment variables:
+REMOTEHOST=140.113.0.229
+MANPATH=/usr/share/man:/usr/man:/usr/X11R6/man:/usr/lib/perl5/man:/usr/kerberos/man:/usr/local/man
+HOSTNAME=linux25
+INNOVUS_dir=/RAID2/EDA/cadence/INNOVUS/INNOVUS_20.15.000
+HOST=linux25
+TERM=xterm-256color
+SHELL=/bin/tcsh
+SSH_CLIENT=140.113.0.229 57018 415
+PERL5LIB=/RAID2/EDA/synopsys/saed_mc/lib
+TMAX_dir=/RAID2/EDA/synopsys/tmax/2019.03
+MGC_LOCATION_MAP=NO_MAP
+QTDIR=/usr/lib64/qt-3.3
+QTINC=/usr/lib64/qt-3.3/include
+SSH_TTY=/dev/pts/2
+XRUN_dir=/RAID2/EDA/cadence/XCELIUM/XCELIUM_20.09.007
+LC_ALL=C
+GROUP=unknown
+USER=dcs064
+LD_LIBRARY_PATH=/RAID2/EDA/synopsys/verdi/2019.06/share/PLI/IUS/linux:/RAID2/EDA/synopsys/verdi/2020.12-sp2/share/PLI/IUS/LINUX:/usr/ius81/tools/lib:/usr/X11R6/lib:/usr/lib:/lib
+LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lz=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.bz=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.rar=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+ICC2_dir=/RAID2/EDA/synopsys/icc2/2020.09-sp3
+MW_dir=/RAID2/EDA/synopsys/ARC/MetaWare
+VSC_dir=/RAID2/EDA/synopsys/vcs/2020.12-sp2
+HOSTTYPE=x86_64-linux
+AMSHOME=/usr/ius81
+LIBPATH=/usr/X11R6/lib:/usr/lib:/lib
+IC06_dir=/RAID2/EDA/cadence/IC/IC_06.17.709
+MAIL=/var/spool/mail/dcs064
+PATH=/RAID2/EDA/tool/htop/htop-1.0.2:/usr/local/python/bin/:/usr/ads/bin:/RAID2/EDA/mentor/calibre/aoi_cal_2021.1_33.19/bin:/RAID2/EDA/synopsys/lc/cur/bin:/RAID2/EDA/synopsys/saed_mc/bin:/RAID2/EDA/synopsys/tmax/2019.03/bin:/RAID2/EDA/synopsys/ARC/MetaWare/ide:/RAID2/EDA/synopsys/ARC/MetaWare/arc/bin:/RAID2/EDA/synopsys/laker/2021.03/bin:/RAID2/EDA/synopsys/customexplorer/2020.12/bin:/RAID2/EDA/synopsys/hspice/2020.03-sp2-2/hspice/bin:/RAID2/EDA/synopsys/primetime/2019.03-sp5-1/bin:/RAID2/EDA/synopsys/icc2/2020.09-sp3/bin:/RAID2/EDA/synopsys/icc/2015.06-sp1/bin:/RAID2/EDA/synopsys/synthesis/2020.09/bin:/RAID2/EDA/synopsys/verdi/2019.06/bin:/RAID2/EDA/synopsys/vcs/2020.12-sp2/linux/bin:/RAID2/EDA/synopsys/vcs/2020.12-sp2/bin:/RAID2/EDA/synopsys/vcs/2020.12-sp2/linux/util:/RAID2/EDA/cadence/IC/IC_06.17.709/tools/dfII/bin:/RAID2/EDA/cadence/IC/IC_06.17.709/tools/bin:/RAID2/eda/jasper_2021.03//bin:/RAID2/EDA/cadence/ext17.21.000-ISR1_linux/tools/bin:/RAID2/EDA/cadence/INNOVUS/INNOVUS_20.15.000/tools.lnx86/bin:/RAID2/EDA/cadence/GENUS/GENUS_20.10.000/bin:/RAID2/EDA/cadence/INCISIV/INCISIVE_15.20.084/tools/bin:/RAID2/EDA/cadence/XCELIUM/XCELIUM_20.09.007/tools.lnx86/inca/bin:/usr/mmsim/tools/bin:/usr/EDI/tools/bin:/usr/sbin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin
+GENUS=/RAID2/EDA/cadence/GENUS/GENUS_20.10.000
+CE_dir=/RAID2/EDA/synopsys/customexplorer/2020.12
+LAKER_dir=/RAID2/EDA/synopsys/laker/2021.03
+PWD=/RAID2/COURSE/dcs/dcs064/HW02/03_GATE
+EDITOR=nedit
+LANG=C
+VERDI_dir=/RAID2/EDA/synopsys/verdi/2019.06
+OA_HOME=/RAID2/EDA/cadence/INNOVUS/INNOVUS_20.15.000/oa_v22.60.058
+PT_dir=/RAID2/EDA/synopsys/primetime/2019.03-sp5-1
+IRUN_dir=/RAID2/EDA/cadence/INCISIV/INCISIVE_15.20.084
+VCS_CC=gcc
+CDSHOME=/usr/cadence
+LM_LICENSE_FILE=1717@lshc:5280@lshc:26585@lshc:5280@lstn:5280@lstc
+CDS_Netlisting_Mode=Analog
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SHLVL=2
+HOME=/RAID2/COURSE/dcs/dcs064
+MC_HOME=/RAID2/EDA/synopsys/saed_mc
+OSTYPE=linux
+MGC_HOME=/RAID2/EDA/mentor/calibre/aoi_cal_2021.1_33.19
+DC_dir=/RAID2/EDA/synopsys/synthesis/2020.09
+LD_ASSUME_KERNEL=2.6.18
+SAED_MC_32_28_PDK=/RAID2/EDA/synopsys/saed_mc/etc/techs/SAED_PDK_32/
+HPEESOF_DIR=/usr/ads
+MGC_TMPDIR=/tmp
+VENDOR=unknown
+MACHTYPE=x86_64
+LOGNAME=dcs064
+ENABLE_STARTUP_LOCALE=iso_8859_1
+QTLIB=/usr/lib64/qt-3.3/lib
+CVS_RSH=ssh
+SSH_CONNECTION=140.113.0.229 57018 140.113.201.55 415
+LC_CTYPE=iso_8859_1
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+JGOLD_dir=/RAID2/eda/jasper_2021.03/
+SHLIB_PATH=/usr/lib
+HSP_dir=/RAID2/EDA/synopsys/hspice/2020.03-sp2-2
+CC=gcc
+ICC_dir=/RAID2/EDA/synopsys/icc/2015.06-sp1
+G_BROKEN_FILENAMES=1
+_=/RAID2/EDA/cadence/INCISIV/INCISIVE_15.20.084/tools/bin/irun
+_IRUNROOT_=/RAID2/EDA/cadence/INCISIV/INCISIVE_15.20.084/tools
+CDS_ARCH=lnx86
+NCRUNMODE=irun:./INCA_libs/irun.lnx86.15.20.nc
+IRUNBATCH=FALSE
+IMPERAS_PORT_FILE=.vsp_ovp_gdb_port
+TCL_LIBRARY=/RAID2/EDA/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/tcl/library
+Runtime command line arguments:
+argv[0]=irun
+argv[1]=TESTBED.sv
+argv[2]=-define
+argv[3]=GATE
+argv[4]=-debug
+argv[5]=-v
+argv[6]=/RAID2/COURSE/iclab/iclabta01/umc018/Verilog/umc18_neg.v
+104 profile - 100
+          CPU/Mem usage: 0.020 sys,  0.020 user,  70.40M sys,  0.00M vm
+105 VC callback profile - scalar:0 vector:0
+106 Thu Mar 30 12:35:57 2023
+107 pliAppInit
+108 FSDB_GATE is disabled.
+109 Enable Parallel Dumping.
+110 pliAppMiscSet: New Sim Round
+111 pliEntryInit
+112 LIBSSCORE=found /RAID2/EDA/synopsys/verdi/2019.06/share/PLI/IUS/linux/libsscore_ius152.so through $LD_LIBRARY_PATH setting.
+113 argv[0]: I2S_SYN.fsdb
+114 argv[0]: 0
+115 argv[1]: +mda
+116 FSDB Dumper for IUS, Release Verdi_P-2019.06, Linux, 05/26/2019
+117 (C) 1996 - 2019 by Synopsys, Inc.
+118 sps_call_fsdbDumpfile at 0 : /RAID2/COURSE/dcs/dcs064/HW02/03_GATE/TESTBED.sv(24)
+119 argv[0]: I2S_SYN.fsdb
+120 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+121 *Verdi* : Create FSDB file 'I2S_SYN.fsdb'
+122 sps_call_fsdbDumpvars at 0 : /RAID2/COURSE/dcs/dcs064/HW02/03_GATE/TESTBED.sv(25)
+123 argv[0]: 0
+124 argv[1]: +mda
+125 *Verdi* : Begin traversing the scopes, layer (0).
+126 *Verdi* : Enable +mda dumping.
+127 Cell instance `TESTBENCH.I_I2S.state_reg_0_'.
+128 *Verdi* : End of traversing.
+129 fsdbDumpvars traverse var: profile - 
+          CPU/Mem usage: 0.020 sys,  0.030 user,  152.92M sys,  0.00M vm
+                   incr: 0.000 sys,  0.010 user,  3.66M sys,  0.00M vm
+                   accu: 0.000 sys,  0.010 user,  3.66M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.010 user,  3.66M sys,  0.00M vm
+
+          Count usage: 1088 var,  595 idcode,  595 callback
+                 incr: 1088 var,  595 idcode,  595 callback
+                 accu: 1088 var,  595 idcode,  595 callback
+            accu incr: 1088 var,  595 idcode,  595 callback
+130 VC callback profile - scalar:0 vector:0
+131 Thu Mar 30 12:35:57 2023
+132 fsdbDumpvars: profile - 
+          CPU/Mem usage: 0.020 sys,  0.030 user,  153.97M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
+                   accu: 0.000 sys,  0.010 user,  4.71M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
+
+          Count usage: 1088 var,  595 idcode,  595 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 1088 var,  595 idcode,  595 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+133 VC callback profile - scalar:593 vector:2
+134 Thu Mar 30 12:35:57 2023
+135 End of simulation at 72490000
+136 VC callback profile - scalar:2390837 vector:1705
+137 Thu Mar 30 12:35:57 2023
+138 Begin FSDB profile info:
+139 FSDB Writer : bc1(2390837) bcn(1705) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.094782) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+FSDB Writer cpu time : MT Compression : 0
+140 End FSDB profile info
+141 Parallel profile    -  Flush:3 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:9
+142                        ProduceTime:0.246881693 ConsumerTime:0.194600446 Buffer:64MB
+143 SimExit
+144 Sim process exit

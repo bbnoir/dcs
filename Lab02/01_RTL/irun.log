@@ -1,0 +1,604 @@
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s084: Started on Jun 01, 2023 at 21:06:22 CST
+irun
+	TESTBED.sv
+	-define RTL
+	-debug
+	-loadpli1 debpli:novas_pli_boot
+Recompiling... reason: file './Sort.sv' is newer than expected.
+	expected: Thu Jun  1 21:05:52 2023
+	actual:   Thu Jun  1 21:06:21 2023
+file: TESTBED.sv
+	module worklib.Sort:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		TESTBED
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.Sort:sv <0x64ee2817>
+			streams:   2, words:  1571
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                   3       3
+		Registers:                26      26
+		Vectored wires:           19       -
+		Always blocks:             2       2
+		Initial blocks:            5       5
+		Cont. assignments:         1       1
+		Pseudo assignments:       12      12
+		Simulation timescale:  100ns
+	Writing initial simulation snapshot: worklib.TESTBED:sv
+Loading snapshot worklib.TESTBED:sv .................... Done
+SVSEED default: 1
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_P-2019.06, Linux x86_64/64bit, 05/26/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'Sort.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +mda dumping.
+*Verdi* : End of traversing.
+[0;32mPASS PATTERN NO.  0 [m
+[0;32mPASS PATTERN NO.  1 [m
+[0;32mPASS PATTERN NO.  2 [m
+[0;32mPASS PATTERN NO.  3 [m
+[0;32mPASS PATTERN NO.  4 [m
+[0;32mPASS PATTERN NO.  5 [m
+[0;32mPASS PATTERN NO.  6 [m
+[0;32mPASS PATTERN NO.  7 [m
+[0;32mPASS PATTERN NO.  8 [m
+[0;32mPASS PATTERN NO.  9 [m
+[0;32mPASS PATTERN NO. 10 [m
+[0;32mPASS PATTERN NO. 11 [m
+[0;32mPASS PATTERN NO. 12 [m
+[0;32mPASS PATTERN NO. 13 [m
+[0;32mPASS PATTERN NO. 14 [m
+[0;32mPASS PATTERN NO. 15 [m
+[0;32mPASS PATTERN NO. 16 [m
+[0;32mPASS PATTERN NO. 17 [m
+[0;32mPASS PATTERN NO. 18 [m
+[0;32mPASS PATTERN NO. 19 [m
+[0;32mPASS PATTERN NO. 20 [m
+[0;32mPASS PATTERN NO. 21 [m
+[0;32mPASS PATTERN NO. 22 [m
+[0;32mPASS PATTERN NO. 23 [m
+[0;32mPASS PATTERN NO. 24 [m
+[0;32mPASS PATTERN NO. 25 [m
+[0;32mPASS PATTERN NO. 26 [m
+[0;32mPASS PATTERN NO. 27 [m
+[0;32mPASS PATTERN NO. 28 [m
+[0;32mPASS PATTERN NO. 29 [m
+[0;32mPASS PATTERN NO. 30 [m
+[0;32mPASS PATTERN NO. 31 [m
+[0;32mPASS PATTERN NO. 32 [m
+[0;32mPASS PATTERN NO. 33 [m
+[0;32mPASS PATTERN NO. 34 [m
+[0;32mPASS PATTERN NO. 35 [m
+[0;32mPASS PATTERN NO. 36 [m
+[0;32mPASS PATTERN NO. 37 [m
+[0;32mPASS PATTERN NO. 38 [m
+[0;32mPASS PATTERN NO. 39 [m
+[0;32mPASS PATTERN NO. 40 [m
+[0;32mPASS PATTERN NO. 41 [m
+[0;32mPASS PATTERN NO. 42 [m
+[0;32mPASS PATTERN NO. 43 [m
+[0;32mPASS PATTERN NO. 44 [m
+[0;32mPASS PATTERN NO. 45 [m
+[0;32mPASS PATTERN NO. 46 [m
+[0;32mPASS PATTERN NO. 47 [m
+[0;32mPASS PATTERN NO. 48 [m
+[0;32mPASS PATTERN NO. 49 [m
+[0;32mPASS PATTERN NO. 50 [m
+[0;32mPASS PATTERN NO. 51 [m
+[0;32mPASS PATTERN NO. 52 [m
+[0;32mPASS PATTERN NO. 53 [m
+[0;32mPASS PATTERN NO. 54 [m
+[0;32mPASS PATTERN NO. 55 [m
+[0;32mPASS PATTERN NO. 56 [m
+[0;32mPASS PATTERN NO. 57 [m
+[0;32mPASS PATTERN NO. 58 [m
+[0;32mPASS PATTERN NO. 59 [m
+[0;32mPASS PATTERN NO. 60 [m
+[0;32mPASS PATTERN NO. 61 [m
+[0;32mPASS PATTERN NO. 62 [m
+[0;32mPASS PATTERN NO. 63 [m
+[0;32mPASS PATTERN NO. 64 [m
+[0;32mPASS PATTERN NO. 65 [m
+[0;32mPASS PATTERN NO. 66 [m
+[0;32mPASS PATTERN NO. 67 [m
+[0;32mPASS PATTERN NO. 68 [m
+[0;32mPASS PATTERN NO. 69 [m
+[0;32mPASS PATTERN NO. 70 [m
+[0;32mPASS PATTERN NO. 71 [m
+[0;32mPASS PATTERN NO. 72 [m
+[0;32mPASS PATTERN NO. 73 [m
+[0;32mPASS PATTERN NO. 74 [m
+[0;32mPASS PATTERN NO. 75 [m
+[0;32mPASS PATTERN NO. 76 [m
+[0;32mPASS PATTERN NO. 77 [m
+[0;32mPASS PATTERN NO. 78 [m
+[0;32mPASS PATTERN NO. 79 [m
+[0;32mPASS PATTERN NO. 80 [m
+[0;32mPASS PATTERN NO. 81 [m
+[0;32mPASS PATTERN NO. 82 [m
+[0;32mPASS PATTERN NO. 83 [m
+[0;32mPASS PATTERN NO. 84 [m
+[0;32mPASS PATTERN NO. 85 [m
+[0;32mPASS PATTERN NO. 86 [m
+[0;32mPASS PATTERN NO. 87 [m
+[0;32mPASS PATTERN NO. 88 [m
+[0;32mPASS PATTERN NO. 89 [m
+[0;32mPASS PATTERN NO. 90 [m
+[0;32mPASS PATTERN NO. 91 [m
+[0;32mPASS PATTERN NO. 92 [m
+[0;32mPASS PATTERN NO. 93 [m
+[0;32mPASS PATTERN NO. 94 [m
+[0;32mPASS PATTERN NO. 95 [m
+[0;32mPASS PATTERN NO. 96 [m
+[0;32mPASS PATTERN NO. 97 [m
+[0;32mPASS PATTERN NO. 98 [m
+[0;32mPASS PATTERN NO. 99 [m
+[0;32mPASS PATTERN NO.100 [m
+[0;32mPASS PATTERN NO.101 [m
+[0;32mPASS PATTERN NO.102 [m
+[0;32mPASS PATTERN NO.103 [m
+[0;32mPASS PATTERN NO.104 [m
+[0;32mPASS PATTERN NO.105 [m
+[0;32mPASS PATTERN NO.106 [m
+[0;32mPASS PATTERN NO.107 [m
+[0;32mPASS PATTERN NO.108 [m
+[0;32mPASS PATTERN NO.109 [m
+[0;32mPASS PATTERN NO.110 [m
+[0;32mPASS PATTERN NO.111 [m
+[0;32mPASS PATTERN NO.112 [m
+[0;32mPASS PATTERN NO.113 [m
+[0;32mPASS PATTERN NO.114 [m
+[0;32mPASS PATTERN NO.115 [m
+[0;32mPASS PATTERN NO.116 [m
+[0;32mPASS PATTERN NO.117 [m
+[0;32mPASS PATTERN NO.118 [m
+[0;32mPASS PATTERN NO.119 [m
+[0;32mPASS PATTERN NO.120 [m
+[0;32mPASS PATTERN NO.121 [m
+[0;32mPASS PATTERN NO.122 [m
+[0;32mPASS PATTERN NO.123 [m
+[0;32mPASS PATTERN NO.124 [m
+[0;32mPASS PATTERN NO.125 [m
+[0;32mPASS PATTERN NO.126 [m
+[0;32mPASS PATTERN NO.127 [m
+[0;32mPASS PATTERN NO.128 [m
+[0;32mPASS PATTERN NO.129 [m
+[0;32mPASS PATTERN NO.130 [m
+[0;32mPASS PATTERN NO.131 [m
+[0;32mPASS PATTERN NO.132 [m
+[0;32mPASS PATTERN NO.133 [m
+[0;32mPASS PATTERN NO.134 [m
+[0;32mPASS PATTERN NO.135 [m
+[0;32mPASS PATTERN NO.136 [m
+[0;32mPASS PATTERN NO.137 [m
+[0;32mPASS PATTERN NO.138 [m
+[0;32mPASS PATTERN NO.139 [m
+[0;32mPASS PATTERN NO.140 [m
+[0;32mPASS PATTERN NO.141 [m
+[0;32mPASS PATTERN NO.142 [m
+[0;32mPASS PATTERN NO.143 [m
+[0;32mPASS PATTERN NO.144 [m
+[0;32mPASS PATTERN NO.145 [m
+[0;32mPASS PATTERN NO.146 [m
+[0;32mPASS PATTERN NO.147 [m
+[0;32mPASS PATTERN NO.148 [m
+[0;32mPASS PATTERN NO.149 [m
+[0;32mPASS PATTERN NO.150 [m
+[0;32mPASS PATTERN NO.151 [m
+[0;32mPASS PATTERN NO.152 [m
+[0;32mPASS PATTERN NO.153 [m
+[0;32mPASS PATTERN NO.154 [m
+[0;32mPASS PATTERN NO.155 [m
+[0;32mPASS PATTERN NO.156 [m
+[0;32mPASS PATTERN NO.157 [m
+[0;32mPASS PATTERN NO.158 [m
+[0;32mPASS PATTERN NO.159 [m
+[0;32mPASS PATTERN NO.160 [m
+[0;32mPASS PATTERN NO.161 [m
+[0;32mPASS PATTERN NO.162 [m
+[0;32mPASS PATTERN NO.163 [m
+[0;32mPASS PATTERN NO.164 [m
+[0;32mPASS PATTERN NO.165 [m
+[0;32mPASS PATTERN NO.166 [m
+[0;32mPASS PATTERN NO.167 [m
+[0;32mPASS PATTERN NO.168 [m
+[0;32mPASS PATTERN NO.169 [m
+[0;32mPASS PATTERN NO.170 [m
+[0;32mPASS PATTERN NO.171 [m
+[0;32mPASS PATTERN NO.172 [m
+[0;32mPASS PATTERN NO.173 [m
+[0;32mPASS PATTERN NO.174 [m
+[0;32mPASS PATTERN NO.175 [m
+[0;32mPASS PATTERN NO.176 [m
+[0;32mPASS PATTERN NO.177 [m
+[0;32mPASS PATTERN NO.178 [m
+[0;32mPASS PATTERN NO.179 [m
+[0;32mPASS PATTERN NO.180 [m
+[0;32mPASS PATTERN NO.181 [m
+[0;32mPASS PATTERN NO.182 [m
+[0;32mPASS PATTERN NO.183 [m
+[0;32mPASS PATTERN NO.184 [m
+[0;32mPASS PATTERN NO.185 [m
+[0;32mPASS PATTERN NO.186 [m
+[0;32mPASS PATTERN NO.187 [m
+[0;32mPASS PATTERN NO.188 [m
+[0;32mPASS PATTERN NO.189 [m
+[0;32mPASS PATTERN NO.190 [m
+[0;32mPASS PATTERN NO.191 [m
+[0;32mPASS PATTERN NO.192 [m
+[0;32mPASS PATTERN NO.193 [m
+[0;32mPASS PATTERN NO.194 [m
+[0;32mPASS PATTERN NO.195 [m
+[0;32mPASS PATTERN NO.196 [m
+[0;32mPASS PATTERN NO.197 [m
+[0;32mPASS PATTERN NO.198 [m
+[0;32mPASS PATTERN NO.199 [m
+[0;32mPASS PATTERN NO.200 [m
+[0;32mPASS PATTERN NO.201 [m
+[0;32mPASS PATTERN NO.202 [m
+[0;32mPASS PATTERN NO.203 [m
+[0;32mPASS PATTERN NO.204 [m
+[0;32mPASS PATTERN NO.205 [m
+[0;32mPASS PATTERN NO.206 [m
+[0;32mPASS PATTERN NO.207 [m
+[0;32mPASS PATTERN NO.208 [m
+[0;32mPASS PATTERN NO.209 [m
+[0;32mPASS PATTERN NO.210 [m
+[0;32mPASS PATTERN NO.211 [m
+[0;32mPASS PATTERN NO.212 [m
+[0;32mPASS PATTERN NO.213 [m
+[0;32mPASS PATTERN NO.214 [m
+[0;32mPASS PATTERN NO.215 [m
+[0;32mPASS PATTERN NO.216 [m
+[0;32mPASS PATTERN NO.217 [m
+[0;32mPASS PATTERN NO.218 [m
+[0;32mPASS PATTERN NO.219 [m
+[0;32mPASS PATTERN NO.220 [m
+[0;32mPASS PATTERN NO.221 [m
+[0;32mPASS PATTERN NO.222 [m
+[0;32mPASS PATTERN NO.223 [m
+[0;32mPASS PATTERN NO.224 [m
+[0;32mPASS PATTERN NO.225 [m
+[0;32mPASS PATTERN NO.226 [m
+[0;32mPASS PATTERN NO.227 [m
+[0;32mPASS PATTERN NO.228 [m
+[0;32mPASS PATTERN NO.229 [m
+[0;32mPASS PATTERN NO.230 [m
+[0;32mPASS PATTERN NO.231 [m
+[0;32mPASS PATTERN NO.232 [m
+[0;32mPASS PATTERN NO.233 [m
+[0;32mPASS PATTERN NO.234 [m
+[0;32mPASS PATTERN NO.235 [m
+[0;32mPASS PATTERN NO.236 [m
+[0;32mPASS PATTERN NO.237 [m
+[0;32mPASS PATTERN NO.238 [m
+[0;32mPASS PATTERN NO.239 [m
+[0;32mPASS PATTERN NO.240 [m
+[0;32mPASS PATTERN NO.241 [m
+[0;32mPASS PATTERN NO.242 [m
+[0;32mPASS PATTERN NO.243 [m
+[0;32mPASS PATTERN NO.244 [m
+[0;32mPASS PATTERN NO.245 [m
+[0;32mPASS PATTERN NO.246 [m
+[0;32mPASS PATTERN NO.247 [m
+[0;32mPASS PATTERN NO.248 [m
+[0;32mPASS PATTERN NO.249 [m
+[0;32mPASS PATTERN NO.250 [m
+[0;32mPASS PATTERN NO.251 [m
+[0;32mPASS PATTERN NO.252 [m
+[0;32mPASS PATTERN NO.253 [m
+[0;32mPASS PATTERN NO.254 [m
+[0;32mPASS PATTERN NO.255 [m
+[0;32mPASS PATTERN NO.256 [m
+[0;32mPASS PATTERN NO.257 [m
+[0;32mPASS PATTERN NO.258 [m
+[0;32mPASS PATTERN NO.259 [m
+[0;32mPASS PATTERN NO.260 [m
+[0;32mPASS PATTERN NO.261 [m
+[0;32mPASS PATTERN NO.262 [m
+[0;32mPASS PATTERN NO.263 [m
+[0;32mPASS PATTERN NO.264 [m
+[0;32mPASS PATTERN NO.265 [m
+[0;32mPASS PATTERN NO.266 [m
+[0;32mPASS PATTERN NO.267 [m
+[0;32mPASS PATTERN NO.268 [m
+[0;32mPASS PATTERN NO.269 [m
+[0;32mPASS PATTERN NO.270 [m
+[0;32mPASS PATTERN NO.271 [m
+[0;32mPASS PATTERN NO.272 [m
+[0;32mPASS PATTERN NO.273 [m
+[0;32mPASS PATTERN NO.274 [m
+[0;32mPASS PATTERN NO.275 [m
+[0;32mPASS PATTERN NO.276 [m
+[0;32mPASS PATTERN NO.277 [m
+[0;32mPASS PATTERN NO.278 [m
+[0;32mPASS PATTERN NO.279 [m
+[0;32mPASS PATTERN NO.280 [m
+[0;32mPASS PATTERN NO.281 [m
+[0;32mPASS PATTERN NO.282 [m
+[0;32mPASS PATTERN NO.283 [m
+[0;32mPASS PATTERN NO.284 [m
+[0;32mPASS PATTERN NO.285 [m
+[0;32mPASS PATTERN NO.286 [m
+[0;32mPASS PATTERN NO.287 [m
+[0;32mPASS PATTERN NO.288 [m
+[0;32mPASS PATTERN NO.289 [m
+[0;32mPASS PATTERN NO.290 [m
+[0;32mPASS PATTERN NO.291 [m
+[0;32mPASS PATTERN NO.292 [m
+[0;32mPASS PATTERN NO.293 [m
+[0;32mPASS PATTERN NO.294 [m
+[0;32mPASS PATTERN NO.295 [m
+[0;32mPASS PATTERN NO.296 [m
+[0;32mPASS PATTERN NO.297 [m
+[0;32mPASS PATTERN NO.298 [m
+[0;32mPASS PATTERN NO.299 [m
+[0;32mPASS PATTERN NO.300 [m
+[0;32mPASS PATTERN NO.301 [m
+[0;32mPASS PATTERN NO.302 [m
+[0;32mPASS PATTERN NO.303 [m
+[0;32mPASS PATTERN NO.304 [m
+[0;32mPASS PATTERN NO.305 [m
+[0;32mPASS PATTERN NO.306 [m
+[0;32mPASS PATTERN NO.307 [m
+[0;32mPASS PATTERN NO.308 [m
+[0;32mPASS PATTERN NO.309 [m
+[0;32mPASS PATTERN NO.310 [m
+[0;32mPASS PATTERN NO.311 [m
+[0;32mPASS PATTERN NO.312 [m
+[0;32mPASS PATTERN NO.313 [m
+[0;32mPASS PATTERN NO.314 [m
+[0;32mPASS PATTERN NO.315 [m
+[0;32mPASS PATTERN NO.316 [m
+[0;32mPASS PATTERN NO.317 [m
+[0;32mPASS PATTERN NO.318 [m
+[0;32mPASS PATTERN NO.319 [m
+[0;32mPASS PATTERN NO.320 [m
+[0;32mPASS PATTERN NO.321 [m
+[0;32mPASS PATTERN NO.322 [m
+[0;32mPASS PATTERN NO.323 [m
+[0;32mPASS PATTERN NO.324 [m
+[0;32mPASS PATTERN NO.325 [m
+[0;32mPASS PATTERN NO.326 [m
+[0;32mPASS PATTERN NO.327 [m
+[0;32mPASS PATTERN NO.328 [m
+[0;32mPASS PATTERN NO.329 [m
+[0;32mPASS PATTERN NO.330 [m
+[0;32mPASS PATTERN NO.331 [m
+[0;32mPASS PATTERN NO.332 [m
+[0;32mPASS PATTERN NO.333 [m
+[0;32mPASS PATTERN NO.334 [m
+[0;32mPASS PATTERN NO.335 [m
+[0;32mPASS PATTERN NO.336 [m
+[0;32mPASS PATTERN NO.337 [m
+[0;32mPASS PATTERN NO.338 [m
+[0;32mPASS PATTERN NO.339 [m
+[0;32mPASS PATTERN NO.340 [m
+[0;32mPASS PATTERN NO.341 [m
+[0;32mPASS PATTERN NO.342 [m
+[0;32mPASS PATTERN NO.343 [m
+[0;32mPASS PATTERN NO.344 [m
+[0;32mPASS PATTERN NO.345 [m
+[0;32mPASS PATTERN NO.346 [m
+[0;32mPASS PATTERN NO.347 [m
+[0;32mPASS PATTERN NO.348 [m
+[0;32mPASS PATTERN NO.349 [m
+[0;32mPASS PATTERN NO.350 [m
+[0;32mPASS PATTERN NO.351 [m
+[0;32mPASS PATTERN NO.352 [m
+[0;32mPASS PATTERN NO.353 [m
+[0;32mPASS PATTERN NO.354 [m
+[0;32mPASS PATTERN NO.355 [m
+[0;32mPASS PATTERN NO.356 [m
+[0;32mPASS PATTERN NO.357 [m
+[0;32mPASS PATTERN NO.358 [m
+[0;32mPASS PATTERN NO.359 [m
+[0;32mPASS PATTERN NO.360 [m
+[0;32mPASS PATTERN NO.361 [m
+[0;32mPASS PATTERN NO.362 [m
+[0;32mPASS PATTERN NO.363 [m
+[0;32mPASS PATTERN NO.364 [m
+[0;32mPASS PATTERN NO.365 [m
+[0;32mPASS PATTERN NO.366 [m
+[0;32mPASS PATTERN NO.367 [m
+[0;32mPASS PATTERN NO.368 [m
+[0;32mPASS PATTERN NO.369 [m
+[0;32mPASS PATTERN NO.370 [m
+[0;32mPASS PATTERN NO.371 [m
+[0;32mPASS PATTERN NO.372 [m
+[0;32mPASS PATTERN NO.373 [m
+[0;32mPASS PATTERN NO.374 [m
+[0;32mPASS PATTERN NO.375 [m
+[0;32mPASS PATTERN NO.376 [m
+[0;32mPASS PATTERN NO.377 [m
+[0;32mPASS PATTERN NO.378 [m
+[0;32mPASS PATTERN NO.379 [m
+[0;32mPASS PATTERN NO.380 [m
+[0;32mPASS PATTERN NO.381 [m
+[0;32mPASS PATTERN NO.382 [m
+[0;32mPASS PATTERN NO.383 [m
+[0;32mPASS PATTERN NO.384 [m
+[0;32mPASS PATTERN NO.385 [m
+[0;32mPASS PATTERN NO.386 [m
+[0;32mPASS PATTERN NO.387 [m
+[0;32mPASS PATTERN NO.388 [m
+[0;32mPASS PATTERN NO.389 [m
+[0;32mPASS PATTERN NO.390 [m
+[0;32mPASS PATTERN NO.391 [m
+[0;32mPASS PATTERN NO.392 [m
+[0;32mPASS PATTERN NO.393 [m
+[0;32mPASS PATTERN NO.394 [m
+[0;32mPASS PATTERN NO.395 [m
+[0;32mPASS PATTERN NO.396 [m
+[0;32mPASS PATTERN NO.397 [m
+[0;32mPASS PATTERN NO.398 [m
+[0;32mPASS PATTERN NO.399 [m
+[0;32mPASS PATTERN NO.400 [m
+[0;32mPASS PATTERN NO.401 [m
+[0;32mPASS PATTERN NO.402 [m
+[0;32mPASS PATTERN NO.403 [m
+[0;32mPASS PATTERN NO.404 [m
+[0;32mPASS PATTERN NO.405 [m
+[0;32mPASS PATTERN NO.406 [m
+[0;32mPASS PATTERN NO.407 [m
+[0;32mPASS PATTERN NO.408 [m
+[0;32mPASS PATTERN NO.409 [m
+[0;32mPASS PATTERN NO.410 [m
+[0;32mPASS PATTERN NO.411 [m
+[0;32mPASS PATTERN NO.412 [m
+[0;32mPASS PATTERN NO.413 [m
+[0;32mPASS PATTERN NO.414 [m
+[0;32mPASS PATTERN NO.415 [m
+[0;32mPASS PATTERN NO.416 [m
+[0;32mPASS PATTERN NO.417 [m
+[0;32mPASS PATTERN NO.418 [m
+[0;32mPASS PATTERN NO.419 [m
+[0;32mPASS PATTERN NO.420 [m
+[0;32mPASS PATTERN NO.421 [m
+[0;32mPASS PATTERN NO.422 [m
+[0;32mPASS PATTERN NO.423 [m
+[0;32mPASS PATTERN NO.424 [m
+[0;32mPASS PATTERN NO.425 [m
+[0;32mPASS PATTERN NO.426 [m
+[0;32mPASS PATTERN NO.427 [m
+[0;32mPASS PATTERN NO.428 [m
+[0;32mPASS PATTERN NO.429 [m
+[0;32mPASS PATTERN NO.430 [m
+[0;32mPASS PATTERN NO.431 [m
+[0;32mPASS PATTERN NO.432 [m
+[0;32mPASS PATTERN NO.433 [m
+[0;32mPASS PATTERN NO.434 [m
+[0;32mPASS PATTERN NO.435 [m
+[0;32mPASS PATTERN NO.436 [m
+[0;32mPASS PATTERN NO.437 [m
+[0;32mPASS PATTERN NO.438 [m
+[0;32mPASS PATTERN NO.439 [m
+[0;32mPASS PATTERN NO.440 [m
+[0;32mPASS PATTERN NO.441 [m
+[0;32mPASS PATTERN NO.442 [m
+[0;32mPASS PATTERN NO.443 [m
+[0;32mPASS PATTERN NO.444 [m
+[0;32mPASS PATTERN NO.445 [m
+[0;32mPASS PATTERN NO.446 [m
+[0;32mPASS PATTERN NO.447 [m
+[0;32mPASS PATTERN NO.448 [m
+[0;32mPASS PATTERN NO.449 [m
+[0;32mPASS PATTERN NO.450 [m
+[0;32mPASS PATTERN NO.451 [m
+[0;32mPASS PATTERN NO.452 [m
+[0;32mPASS PATTERN NO.453 [m
+[0;32mPASS PATTERN NO.454 [m
+[0;32mPASS PATTERN NO.455 [m
+[0;32mPASS PATTERN NO.456 [m
+[0;32mPASS PATTERN NO.457 [m
+[0;32mPASS PATTERN NO.458 [m
+[0;32mPASS PATTERN NO.459 [m
+[0;32mPASS PATTERN NO.460 [m
+[0;32mPASS PATTERN NO.461 [m
+[0;32mPASS PATTERN NO.462 [m
+[0;32mPASS PATTERN NO.463 [m
+[0;32mPASS PATTERN NO.464 [m
+[0;32mPASS PATTERN NO.465 [m
+[0;32mPASS PATTERN NO.466 [m
+[0;32mPASS PATTERN NO.467 [m
+[0;32mPASS PATTERN NO.468 [m
+[0;32mPASS PATTERN NO.469 [m
+[0;32mPASS PATTERN NO.470 [m
+[0;32mPASS PATTERN NO.471 [m
+[0;32mPASS PATTERN NO.472 [m
+[0;32mPASS PATTERN NO.473 [m
+[0;32mPASS PATTERN NO.474 [m
+[0;32mPASS PATTERN NO.475 [m
+[0;32mPASS PATTERN NO.476 [m
+[0;32mPASS PATTERN NO.477 [m
+[0;32mPASS PATTERN NO.478 [m
+[0;32mPASS PATTERN NO.479 [m
+[0;32mPASS PATTERN NO.480 [m
+[0;32mPASS PATTERN NO.481 [m
+[0;32mPASS PATTERN NO.482 [m
+[0;32mPASS PATTERN NO.483 [m
+[0;32mPASS PATTERN NO.484 [m
+[0;32mPASS PATTERN NO.485 [m
+[0;32mPASS PATTERN NO.486 [m
+[0;32mPASS PATTERN NO.487 [m
+[0;32mPASS PATTERN NO.488 [m
+[0;32mPASS PATTERN NO.489 [m
+[0;32mPASS PATTERN NO.490 [m
+[0;32mPASS PATTERN NO.491 [m
+[0;32mPASS PATTERN NO.492 [m
+[0;32mPASS PATTERN NO.493 [m
+[0;32mPASS PATTERN NO.494 [m
+[0;32mPASS PATTERN NO.495 [m
+[0;32mPASS PATTERN NO.496 [m
+[0;32mPASS PATTERN NO.497 [m
+[0;32mPASS PATTERN NO.498 [m
+[0;32mPASS PATTERN NO.499 [m
+[37m                                                                                                                                          
+[37m                                                                                [32m      :BBQvi.                                              
+[37m                                                              .i7ssrvs7         [32m     BBBBBBBBQi                                           
+[37m                        .:r7rrrr:::.        .::::::...   .i7vr:.      .B:       [32m    :BBBP :7BBBB.                                         
+[37m                      .Kv.........:rrvYr7v7rr:.....:rrirJr.   .rgBBBBg  Bi      [32m    BBBB     BBBB                                         
+[37m                     7Q  :rubEPUri:.       ..:irrii:..    :bBBBBBBBBBBB  B      [32m   iBBBv     BBBB       vBr                               
+[37m                    7B  BBBBBBBBBBBBBBB::BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB :R     [32m   BBBBBKrirBBBB.     :BBBBBB:                            
+[37m                   Jd .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: Bi    [32m  rBBBBBBBBBBBR.    .BBBM:BBB                             
+[37m                  uZ .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB .B    [32m  BBBB   .::.      EBBBi :BBU                             
+[37m                 7B .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  B    [32m MBBBr           vBBBu   BBB.                             
+[37m                .B  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: JJ   [32m i7PB          iBBBBB.  iBBB                              
+[37m                B. BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  Lu             [32m  vBBBBPBBBBPBBB7       .7QBB5i                
+[37m               Y1 KBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBi XBBBBBBBi :B            [32m :RBBB.  .rBBBBB.      rBBBBBBBB7              
+[37m              :B .BBBBBBBBBBBBBsRBBBBBBBBBBBrQBBBBB. UBBBRrBBBBBBr 1BBBBBBBBB  B.          [32m    .       BBBB       BBBB  :BBBB             
+[37m              Bi BBBBBBBBBBBBBi :BBBBBBBBBBE .BBK.  .  .   QBBBBBBBBBBBBBBBBBB  Bi         [32m           rBBBr       BBBB    BBBU            
+[37m             .B .BBBBBBBBBBBBBBQBBBBBBBBBBBB       [38;2;242;172;172mBBv [37m.LBBBBBBBBBBBBBBBBBBBBBB. B7.:ii:   [32m           vBBB        .BBBB   :7i.            
+[37m            .B  PBBBBBBBBBBBBBBBBBBBBBBBBBBBBbYQB. [38;2;242;172;172mBB: [37mBBBBBBBBBBBBBBBBBBBBBBBBB  Jr:::rK7 [32m             .7  BBB7   iBBBg                  
+[37m           7M  PBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  [38;2;242;172;172mBB. [37mBBBBBBBBBBBBBBBBBBBBBBB..i   .   v1                  [32mdBBB.   5BBBr                 
+[37m          sZ .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  [38;2;242;172;172mBB. [37mBBBBBBBBBBBBBBBBBBBBBBBBBBB iD2BBQL.                 [32m ZBBBr  EBBBv     YBBBBQi     
+[37m  .7YYUSIX5 .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  [38;2;242;172;172mBB. [37mBBBBBBBBBBBBBBBBBBBBBBBBY.:.      :B                 [32m  iBBBBBBBBD     BBBBBBBBB.   
+[37m LB.        ..BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB. [38;2;242;172;172mBB: [37mBBBBBBBBBBBBBBBBBBBBBBBBMBBB. BP17si                 [32m    :LBBBr      vBBBi  5BBB   
+[37m  KvJPBBB :BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: [38;2;242;172;172mZB: [37mBBBBBBBBBBBBBBBBBBBBBBBBBsiJr .i7ssr:                [32m          ...   :BBB:   BBBu  
+[37m i7ii:.   ::BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBj [38;2;242;172;172muBi [37mQBBBBBBBBBBBBBBBBBBBBBBBBi.ir      iB                [32m         .BBBi   BBBB   iMBu  
+[37mDB    .  vBdBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBg [38;2;242;172;172m7Bi [37mBBBBBBBBBBBBBBBBBBBBBBBBBBBBB rBrXPv.                [32m          BBBX   :BBBr        
+[37m :vQBBB. BQBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBQ [38;2;242;172;172miB: [37mBBBBBBBBBBBBBBBBBBBBBBBBBBBBB .L:ii::irrrrrrrr7jIr   [32m          .BBBv  :BBBQ        
+[37m :7:.   .. 5BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  [38;2;242;172;172mBr [37mBBBBBBBBBBBBBBBBBBBBBBBBBBBB:            ..... ..YB. [32m           .BBBBBBBBB:        
+[37mBU  .:. BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  [38;2;242;172;172mB7 [37mgBBBBBBBBBBBBBBBBBBBBBBBBBB. gBBBBBBBBBBBBBBBBBB. BL [32m             rBBBBB1.         
+[37m rY7iB: BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: [38;2;242;172;172mB7 [37mBBBBBBBBBBBBBBBBBBBBBBBBBB. QBBBBBBBBBBBBBBBBBi  v5                                
+[37m     us EBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB [38;2;242;172;172mIr [37mBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBgu7i.:BBBBBBBr Bu                                 
+[37m      B  7BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB.[38;2;242;172;172m:i [37mBBBBBBBBBBBBBBBBBBBBBBBBBBBv:.  .. :::  .rr    rB                                  
+[37m      us  .BBBBBBBBBBBBBQLXBBBBBBBBBBBBBBBBBBBBBBBBq  .BBBBBBBBBBBBBBBBBBBBBBBBBv  :iJ7vri:::1Jr..isJYr                                   
+[37m      B  BBBBBBB  MBBBM      qBBBBBBBBBBBBBBBBBBBBBB: BBBBBBBBBBBBBBBBBBBBBBBBBB  B:           iir:                                       
+[37m     iB iBBBBBBBL       BBBP. :BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  B.                                                       
+[37m     P: BBBBBBBBBBB5v7gBBBBBB  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: Br                                                        
+[37m     B  BBBs 7BBBBBBBBBBBBBB7 :BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB .B                                                         
+[37m    .B :BBBB.  EBBBBBQBBBBBJ .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB. B.                                                         
+[37m    ij qBBBBBg          ..  .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB .B                                                          
+[37m    UY QBBBBBBBBSUSPDQL...iBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK EL                                                          
+[37m    B7 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: B:                                                          
+[37m    B  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBYrBB vBBBBBBBBBBBBBBBBBBBBBBBB. Ls                                                          
+[37m    B  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBi_  /UBBBBBBBBBBBBBBBBBBBBBBBBB. :B:                                                        
+[37m   rM .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  ..IBBBBBBBBBBBBBBBBQBBBBBBBBBB  B                                                        
+[37m   B  BBBBBBBBBdZBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBPBBBBBBBBBBBBEji:..     sBBBBBBBr Br                                                       
+[37m  7B 7BBBBBBBr     .:vXQBBBBBBBBBBBBBBBBBBBBBBBBBQqui::..  ...i:i7777vi  BBBBBBr Bi                                                       
+[37m  Ki BBBBBBB  rY7vr:i....  .............:.....  ...:rii7vrr7r:..      7B  BBBBB  Bi                                                       
+[37m  B. BBBBBB  B:    .::ir77rrYLvvriiiiiiirvvY7rr77ri:..                 bU  iQBB:..rI                                                      
+[37m.S: 7BBBBP  B.                                                          vI7.  .:.  B.                                                     
+[37mB: ir:.   :B.                                                             :rvsUjUgU.                                                      
+[37mrMvrrirJKur                                                                                                                               [m
+--------------------------------------------------------------------------------------------------------------------------------------------
+                                                               Congratulations!                						             
+                                                        You have passed all patterns!          						             
+                                                               time:    50000 ns                                                        
+--------------------------------------------------------------------------------------------------------------------------------------------
+Simulation complete via $finish(1) at time 5 MS + 0
+ncsim> exit
+TOOL:	irun(64)	15.20-s084: Exiting on Jun 01, 2023 at 21:06:23 CST  (total: 00:00:01)

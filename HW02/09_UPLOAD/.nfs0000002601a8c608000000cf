@@ -1,0 +1,26 @@
+#!/bin/bash
+set -e
+
+LAB=HW02
+DESIGN=I2S
+DEMO=$1
+if [ -z "$DEMO" ]; then
+    echo "Please input argument."
+    echo -e "Only accept \e[31mdemo1\e[0m or \e[31mdemo2\e[0m!"
+    exit 1
+fi
+if [ $DEMO != demo1 ] && [ $DEMO != demo2 ]; then
+    echo -e "\e[31mWrong argument\e[0m."
+    echo -e "Only accept \e[31mdemo1\e[0m or \e[31mdemo2\e[0m!"
+    exit 1
+fi
+
+ID=$(whoami)
+name_target="$DESIGN"_"$ID".sv
+target_file=~dcsta03/UpLoaD/"$LAB"/"$DEMO"/"$name_target"
+if [ ! -f $target_file ]; then
+    echo -e "\e[31mYou haven't uploaded yet!\e[0m"
+    exit 1
+fi
+cp $target_file .
+echo -e "\e[34m\e[05mDownload done!\e[0m"

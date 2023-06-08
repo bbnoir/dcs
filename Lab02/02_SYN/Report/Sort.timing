@@ -1,0 +1,84 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Sort
+Version: T-2022.03
+Date   : Thu Jun  1 21:06:33 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: in_num0[2] (input port)
+  Endpoint: out_num[0] (output port)
+  Path Group: default
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  in_num0[2] (in)                          0.00       0.00 f
+  U230/Y (INVX1)                           0.07       0.07 r
+  U283/Y (NAND2XL)                         0.07       0.14 f
+  U282/Y (OAI211XL)                        0.11       0.26 r
+  U244/Y (OAI2BB1XL)                       0.24       0.50 r
+  U228/Y (NAND2X1)                         0.10       0.60 f
+  U353/Y (OAI21X2)                         0.28       0.88 r
+  U337/Y (MXI2XL)                          0.38       1.26 f
+  U242/Y (OAI21XL)                         0.23       1.49 r
+  U336/Y (OAI211XL)                        0.13       1.61 f
+  U210/Y (OAI2BB1XL)                       0.23       1.85 f
+  U226/Y (OAI21X1)                         0.16       2.01 r
+  U406/Y (NAND2X1)                         0.09       2.10 f
+  U225/Y (NAND2X1)                         0.12       2.22 r
+  U224/Y (OAI21X2)                         0.25       2.47 f
+  U338/Y (MXI2X1)                          0.21       2.68 r
+  U312/Y (INVXL)                           0.13       2.81 f
+  U240/Y (OAI2BB2XL)                       0.21       3.02 r
+  U355/Y (OAI22XL)                         0.15       3.18 f
+  U272/Y (AOI2BB2XL)                       0.27       3.45 f
+  U219/Y (OAI2BB1X1)                       0.28       3.73 f
+  U412/Y (OAI21X2)                         0.28       4.01 r
+  U268/Y (MXI2XL)                          0.40       4.41 f
+  U363/Y (NAND2XL)                         0.18       4.59 r
+  U362/Y (NAND2XL)                         0.08       4.67 f
+  U361/Y (OAI21XL)                         0.15       4.81 r
+  U266/Y (OAI22XL)                         0.15       4.96 f
+  U400/Y (OAI22X1)                         0.27       5.23 r
+  U420/CON (AFHCONX2)                      0.19       5.42 f
+  U421/CON (AFHCONX2)                      0.43       5.85 r
+  U216/Y (MXI2X1)                          0.41       6.26 f
+  U215/Y (NAND2XL)                         0.15       6.41 r
+  U260/Y (OAI21XL)                         0.11       6.52 f
+  U360/Y (OAI22X1)                         0.25       6.77 r
+  U427/CON (AFHCONX2)                      0.15       6.92 f
+  U237/Y (OAI22X1)                         0.19       7.11 r
+  U429/Y (OAI2BB1X2)                       0.22       7.34 r
+  U256/Y (NAND2X2)                         0.13       7.47 f
+  U378/Y (MXI2XL)                          0.26       7.73 r
+  U203/CO (ADDFX1)                         0.54       8.28 r
+  U235/CO (ADDFHX1)                        0.24       8.52 r
+  U234/Y (OAI21XL)                         0.10       8.62 f
+  U402/Y (NAND2X1)                         0.12       8.73 r
+  U250/Y (NAND2XL)                         0.09       8.82 f
+  U233/Y (AOI222X1)                        0.44       9.26 r
+  U232/Y (AOI2BB1X2)                       0.21       9.48 f
+  U287/Y (MXI2X1)                          0.52      10.00 r
+  out_num[0] (out)                         0.00      10.00 r
+  data arrival time                                  10.00
+
+  max_delay                               10.00      10.00
+  output external delay                    0.00      10.00
+  data required time                                 10.00
+  -----------------------------------------------------------
+  data required time                                 10.00
+  data arrival time                                 -10.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

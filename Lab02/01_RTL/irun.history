@@ -1,0 +1,12 @@
+s1(09Mar2023:15:29:22):  irun TESTBED.sv -define RTL -debug -loadpli1 debpli:novas_pli_boot 
+s2(09Mar2023:15:30:20):  irun TESTBED.sv -define RTL -debug -loadpli1 debpli:novas_pli_boot 
+s3(09Mar2023:20:37:44):  irun TESTBED.sv -define RTL -debug -loadpli1 debpli:novas_pli_boot 
+s4(09Mar2023:20:39:53):  irun TESTBED.sv -define RTL -debug -loadpli1 debpli:novas_pli_boot 
+s5(01Jun2023:20:56:56):  irun TESTBED.sv -define RTL -debug -loadpli1 debpli:novas_pli_boot 
+s6(01Jun2023:21:01:53):  irun TESTBED.sv -define RTL -debug -loadpli1 debpli:novas_pli_boot 
+s7(01Jun2023:21:02:08):  irun TESTBED.sv -define RTL -debug -loadpli1 debpli:novas_pli_boot 
+s8(01Jun2023:21:02:27):  irun TESTBED.sv -define RTL -debug -loadpli1 debpli:novas_pli_boot 
+s9(01Jun2023:21:02:42):  irun TESTBED.sv -define RTL -debug -loadpli1 debpli:novas_pli_boot 
+s10(01Jun2023:21:03:22):  irun TESTBED.sv -define RTL -debug -loadpli1 debpli:novas_pli_boot 
+s11(01Jun2023:21:05:55):  irun TESTBED.sv -define RTL -debug -loadpli1 debpli:novas_pli_boot 
+s12(01Jun2023:21:06:22):  irun TESTBED.sv -define RTL -debug -loadpli1 debpli:novas_pli_boot 

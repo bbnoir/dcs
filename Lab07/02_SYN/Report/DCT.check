@@ -1,0 +1,19 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Thu Apr 27 18:37:12 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               5
+    Cells do not drive (LINT-1)                                     5
+--------------------------------------------------------------------------------
+
+Warning: In design 'DCT', cell 'B_28' does not drive any nets. (LINT-1)
+Warning: In design 'DCT', cell 'B_29' does not drive any nets. (LINT-1)
+Warning: In design 'DCT', cell 'C2603' does not drive any nets. (LINT-1)
+Warning: In design 'DCT', cell 'C2626' does not drive any nets. (LINT-1)
+Warning: In design 'DCT', cell 'C2631' does not drive any nets. (LINT-1)
+1

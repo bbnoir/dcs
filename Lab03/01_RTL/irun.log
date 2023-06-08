@@ -1,0 +1,54 @@
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s084: Started on Jun 01, 2023 at 19:03:28 CST
+irun
+	TESTBED.sv
+	-define RTL
+	-debug
+file: TESTBED.sv
+		errors: 0, warnings: 0
+	module worklib.Counter:sv
+		errors: 0, warnings: 0
+	module worklib.TESTBED:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		TESTBED
+	$fsdbDumpfile("Counter.fsdb");	
+	            |
+ncelab: *W,MISSYST (./TESTBED.sv,16|13): Unrecognized system task or function: $fsdbDumpfile (did not match built-in or user-defined names) [2.7.4(IEEE Std 1364-2001)].
+If item was defined in a shared-object library, the problem could be:
+libvpi.so: cannot open shared object file: No such file or directory or file is not valid ELFCLASS64 library.
+libpli.so: cannot open shared object file: No such file or directory or file is not valid ELFCLASS64 library..
+	$fsdbDumpvars;
+	            |
+ncelab: *W,MISSYST (./TESTBED.sv,17|13): Unrecognized system task or function: $fsdbDumpvars (did not match built-in or user-defined names) [2.7.4(IEEE Std 1364-2001)].
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.Counter:sv <0x4d173425>
+			streams:   3, words:   622
+			streams:   9, words: 59897
+		worklib.TESTBED:sv <0x3189a13c>
+			streams:   7, words:  1915
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 3       3
+		Registers:              11      11
+		Scalar wires:            9       -
+		Always blocks:           3       3
+		Initial blocks:          3       3
+		Pseudo assignments:      6       6
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.TESTBED:sv
+Loading snapshot worklib.TESTBED:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	$fsdbDumpfile("Counter.fsdb");	
+	            |
+ncsim: *E,MSSYSTF (./TESTBED.sv,16|13): User Defined system task or function ($fsdbDumpfile) registered during elaboration and used within the simulation has not been registered during simulation.
+	$fsdbDumpvars;
+	            |
+ncsim: *E,MSSYSTF (./TESTBED.sv,17|13): User Defined system task or function ($fsdbDumpvars) registered during elaboration and used within the simulation has not been registered during simulation.
+TOOL:	irun(64)	15.20-s084: Exiting on Jun 01, 2023 at 19:03:29 CST  (total: 00:00:01)

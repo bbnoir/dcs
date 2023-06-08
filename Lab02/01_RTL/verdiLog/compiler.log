@@ -1,0 +1,10 @@
+*design* DebussyLib (btIdent Verdi_P-2019.06)
+Command arguments:
+    +define+verilog
+    /RAID2/COURSE/dcs/dcs064/Lab02/01_RTL/Sort.sv
+    -sv
+
+Highest level modules:
+Sort
+
+Total	0 error(s),   0 warning(s)

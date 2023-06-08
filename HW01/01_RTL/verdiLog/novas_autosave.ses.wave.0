@@ -1,0 +1,89 @@
+Magic 271485
+Revision Verdi_P-2019.06
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 1536 736 206 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/RAID2/COURSE/dcs/dcs064/HW01/01_RTL/SMJ.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 64872.000000 65108.061719
+cursor 0.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 14
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/RAID2/COURSE/dcs/dcs064/HW01/01_RTL/SMJ.fsdb"
+addSignal -h 15 -UNSIGNED -BIN /TESTBENCH/I_SMJ/check0[1:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope check1[1:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope check2[1:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope hand_n0[5:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope hand_n1[5:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope hand_n2[5:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope hand_n3[5:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope hand_n4[5:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope out_data[1:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope sorted_n0[5:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope sorted_n1[5:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope sorted_n2[5:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope sorted_n3[5:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope sorted_n4[5:0]
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/RAID2/COURSE/dcs/dcs064/HW01/01_RTL/SMJ.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/TESTBENCH"
+"/TESTBENCH/I_SMJ"
+"/TESTBENCH/I_SMJ/w0"
+"/TESTBENCH/I_SMJ/w0/win"
+
+SCOPE_LIST_BEGIN
+"/TESTBENCH"
+"/TESTBENCH/I_SMJ"
+"/TESTBENCH/I_SMJ/w0"
+"/TESTBENCH/I_SMJ/w1"
+"/TESTBENCH/I_SMJ/w0/win"
+"/TESTBENCH/I_SMJ/s1"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

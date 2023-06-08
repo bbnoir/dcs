@@ -1,0 +1,16 @@
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s084: Started on Apr 06, 2023 at 16:44:40 CST
+irun
+	TESTBED.sv
+	-define RTL
+	-debug
+Loading snapshot worklib.TESTBENCH:sv .................... Done
+SVSEED default: 1
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+		$fsdbDumpfile("I2S.fsdb");
+		            |
+ncsim: *E,MSSYSTF (./TESTBED.sv,20|14): User Defined system task or function ($fsdbDumpfile) registered during elaboration and used within the simulation has not been registered during simulation.
+		$fsdbDumpvars(0,"+mda");
+		            |
+ncsim: *E,MSSYSTF (./TESTBED.sv,21|14): User Defined system task or function ($fsdbDumpvars) registered during elaboration and used within the simulation has not been registered during simulation.
+TOOL:	irun(64)	15.20-s084: Exiting on Apr 06, 2023 at 16:44:42 CST  (total: 00:00:02)

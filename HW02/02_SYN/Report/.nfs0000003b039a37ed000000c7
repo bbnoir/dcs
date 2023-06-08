@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : I2S
+Version: R-2020.09
+Date   : Thu Mar 16 07:59:36 2023
+****************************************
+
+Library(s) Used:
+
+    slow (File: /RAID2/COURSE/iclab/iclabta01/umc018/Synthesis/slow.db)
+
+Number of ports:                           70
+Number of nets:                           272
+Number of cells:                          267
+Number of combinational cells:            136
+Number of sequential cells:               131
+Number of macros/black boxes:               0
+Number of buf/inv:                          1
+Number of references:                       9
+
+Combinational area:               1802.908824
+Buf/Inv area:                        9.979200
+Noncombinational area:            9154.252884
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 10957.161708
+Total area:                 undefined
+1

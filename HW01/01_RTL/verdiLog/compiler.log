@@ -1,0 +1,15 @@
+*design* DebussyLib (btIdent Verdi_P-2019.06)
+Command arguments:
+    +define+verilog
+    /RAID2/COURSE/dcs/dcs064/HW01/01_RTL/PATTERN.sv
+    /RAID2/COURSE/dcs/dcs064/HW01/01_RTL/SMJ.sv
+    /RAID2/COURSE/dcs/dcs064/HW01/01_RTL/TESTBED.sv
+    -sv
+
+
+*Error* Module PATTERN redefined
+"PATTERN.sv", 3: 
+Highest level modules:
+TESTBENCH
+
+Total	1 error(s),   0 warning(s)

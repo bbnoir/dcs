@@ -1,0 +1,71 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CDC
+Version: T-2022.03
+Date   : Thu Jun  1 10:57:00 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: in_valid (input port clocked by clk_1)
+  Endpoint: in_a_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by clk_1)
+  Path Group: clk_1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_1 (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     7.05       7.05 r
+  in_valid (in)                            0.00       7.05 r
+  U64/Y (INVX2)                            0.08       7.13 f
+  U72/Y (NAND2X1)                          0.10       7.23 r
+  U71/Y (OAI2BB1X1)                        0.07       7.29 f
+  in_a_reg_reg[0]/D (DFFRHQX1)             0.00       7.29 f
+  data arrival time                                   7.29
+
+  clock clk_1 (rise edge)                 14.10      14.10
+  clock network delay (ideal)              0.00      14.10
+  in_a_reg_reg[0]/CK (DFFRHQX1)            0.00      14.10 r
+  library setup time                      -0.40      13.70
+  data required time                                 13.70
+  -----------------------------------------------------------
+  data required time                                 13.70
+  data arrival time                                  -7.29
+  -----------------------------------------------------------
+  slack (MET)                                         6.40
+
+
+  Startpoint: out_reg[0] (rising edge-triggered flip-flop clocked by clk_2)
+  Endpoint: out[0] (output port clocked by clk_2)
+  Path Group: clk_2
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_2 (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  out_reg[0]/CK (DFFRHQX1)                 0.00       0.00 r
+  out_reg[0]/Q (DFFRHQX1)                  0.83       0.83 r
+  out[0] (out)                             0.00       0.83 r
+  data arrival time                                   0.83
+
+  clock clk_2 (rise edge)                  2.50       2.50
+  clock network delay (ideal)              0.00       2.50
+  output external delay                   -1.25       1.25
+  data required time                                  1.25
+  -----------------------------------------------------------
+  data required time                                  1.25
+  data arrival time                                  -0.83
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+1

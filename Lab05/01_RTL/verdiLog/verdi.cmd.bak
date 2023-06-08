@@ -1,0 +1,173 @@
+debImport "/home/RAID2/COURSE/dcs/dcsta02/TA/Lab05/01_RTL/inter.sv" \
+          "/home/RAID2/COURSE/dcs/dcsta02/TA/Lab05/01_RTL/mem_slave.sv" \
+          "/home/RAID2/COURSE/dcs/dcsta02/TA/Lab05/01_RTL/PATTERN.sv" \
+          "/home/RAID2/COURSE/dcs/dcsta02/TA/Lab05/01_RTL/TESTBENCH.sv" "-sv" \
+          -path {/home/RAID2/COURSE/dcs/dcsta02/TA/Lab05/01_RTL}
+schCreateWindow -delim "." -win $_nSchema1 -scope "TESTBENCH"
+wvCreateWindow
+verdiDockWidgetSetCurTab -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -inst "I_interconnect" -line 41 -pos 1 -win $_nTrace1
+srcAction -pos 40 2 5 -win $_nTrace1 -name "I_interconnect" -ctrlKey off
+wvSetPosition -win $_nWave3 {("G1" 0)}
+wvOpenFile -win $_nWave3 \
+           {/home/RAID2/COURSE/dcs/dcsta02/TA/Lab05/01_RTL/inter.fsdb}
+schSelect -win $_nSchema2 -inst "I_interconnect"
+wvAddSignal -win $_nWave3 "/TESTBENCH/interconnect2master_ready2" \
+           "/TESTBENCH/interconnect2master_ready1" \
+           "/TESTBENCH/value_master2slave\[2:0\]" \
+           "/TESTBENCH/addr_master2slave\[2:0\]" "/TESTBENCH/ready_slave2" \
+           "/TESTBENCH/ready_slave1" "/TESTBENCH/valid_master2slave2" \
+           "/TESTBENCH/valid_master2slave1" "/TESTBENCH/data_3\[6:0\]" \
+           "/TESTBENCH/data_2\[6:0\]" "/TESTBENCH/data_1\[6:0\]" \
+           "/TESTBENCH/in_valid_3" "/TESTBENCH/in_valid_2" \
+           "/TESTBENCH/in_valid_1" "/TESTBENCH/rst_n" "/TESTBENCH/clk"
+wvSetPosition -win $_nWave3 {("G1" 0)}
+wvSetPosition -win $_nWave3 {("G1" 16)}
+wvSetPosition -win $_nWave3 {("G1" 16)}
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {37 37 8 14 1 1}
+wvScrollDown -win $_nWave3 2
+wvSetPosition -win $_nWave3 {("G2" 0)}
+wvAddSignal -win $_nWave3 "/TESTBENCH/I_interconnect/cur_state\[2:0\]" \
+           "/TESTBENCH/I_interconnect/nxt_state\[2:0\]"
+wvSetPosition -win $_nWave3 {("G2" 0)}
+wvSetPosition -win $_nWave3 {("G2" 2)}
+wvSetPosition -win $_nWave3 {("G2" 2)}
+srcSetOptions -annotate on -win $_nTrace1
+schSetOptions -win $_nSchema1 -annotate on
+wvSetCursor -win $_nWave3 5714.303973 -snap {("G2" 1)}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+schSelect -win $_nSchema2 -inst "I_interconnect"
+schPushViewIn -win $_nSchema2
+schSelect -win $_nSchema2 -inst "inter\(@1\):FSM0:44:122:FSM"
+schPushViewIn -win $_nSchema2
+fsmSetCurrentWindow -win $_nState4
+fsmResizeWindow 0 25 982 403 -win $_nState4
+fsmResizeWindow 0 25 982 403 -win $_nState4
+fsmResizeWindow 0 25 982 403 -win $_nState4
+fsmResizeWindow 0 25 982 403 -win $_nState4
+fsmResizeWindow 0 25 982 403 -win $_nState4
+verdiDockWidgetSetCurTab -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvSetCursor -win $_nWave3 9096.238977 -snap {("G1" 16)}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ready_slave2" -line 81 -pos 1 -win $_nTrace1
+wvSetPosition -win $_nWave3 {("G3" 0)}
+wvAddSignal -win $_nWave3 "/TESTBENCH/I_interconnect/ready_slave2"
+wvSetPosition -win $_nWave3 {("G3" 0)}
+wvSetPosition -win $_nWave3 {("G3" 1)}
+wvSetPosition -win $_nWave3 {("G3" 1)}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "valid_slave2" -line 81 -pos 1 -win $_nTrace1
+wvAddSignal -win $_nWave3 "/TESTBENCH/I_interconnect/valid_slave2"
+wvSetPosition -win $_nWave3 {("G3" 1)}
+wvSetPosition -win $_nWave3 {("G3" 2)}
+wvSetCursor -win $_nWave3 16676.438124 -snap {("G2" 2)}
+wvSetCursor -win $_nWave3 17900.931832 -snap {("G2" 2)}
+wvSetCursor -win $_nWave3 16326.582779 -snap {("G2" 2)}
+wvSetCursor -win $_nWave3 18250.787178 -snap {("G2" 2)}
+wvSetCursor -win $_nWave3 15976.727433 -snap {("G1" 16)}
+wvSetCursor -win $_nWave3 19883.445455 -snap {("G1" 16)}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cur_state" -line 79 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+schSelect -win $_nSchema2 -inst "inter\(@1\):FSM0:44:122:FSM"
+verdiDockWidgetSetCurTab -dock windowDock_nState_4
+verdiDockWidgetSetCurTab -dock widgetDock_MTB_SOURCE_TAB_1
+wvSetCursor -win $_nWave3 1224.493708 -snap {("G2" 1)}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+wvSetCursor -win $_nWave3 5947.540869 -snap {("G3" 0)}
+wvSetCursor -win $_nWave3 5947.540869 -snap {("G3" 1)}
+wvSetCursor -win $_nWave3 6705.560784 -snap {("G1" 16)}
+wvSelectSignal -win $_nWave3 {( "G1" 16 )} 
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "clk" -line 3 -pos 1 -win $_nTrace1
+srcSetSearchMode -posedge
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+srcSearchNext -win $_nTrace1
+wvSelectSignal -win $_nWave3 {( "G3" 2 )} 
+wvSelectSignal -win $_nWave3 {( "G1" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 )} \
+           {( "G2" 1 2 )} {( "G3" 1 2 )} 
+wvSelectSignal -win $_nWave3 {( "G3" 1 )} 
+wvSelectSignal -win $_nWave3 {( "G3" 2 )} 
+wvSelectGroup -win $_nWave3 {G1}
+wvSaveSignal -win $_nWave3 \
+           "/home/RAID2/COURSE/dcs/dcsta02/TA/Lab05/01_RTL/debug.rc"
+wvSelectSignal -win $_nWave3 {( "G1" 1 )} 
+wvSelectSignal -win $_nWave3 {( "G1" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 )} \
+           {( "G2" 1 2 )} {( "G3" 1 2 )} 
+wvCut -win $_nWave3
+wvSetPosition -win $_nWave3 {("G3" 0)}
+wvSelectGroup -win $_nWave3 {G1}
+wvRestoreSignal -win $_nWave3 \
+           "/home/RAID2/COURSE/dcs/dcsta02/TA/Lab05/01_RTL/debug.rc" \
+           -overWriteAutoAlias on -appendSignals on
+wvSelectSignal -win $_nWave3 {( "G3" 2 )} 
+wvSelectSignal -win $_nWave3 {( "G2" 1 )} 
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {81 100 2 21 1 11}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {84 103 1 1 1 1}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "data_in_2_comb" -line 87 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "data_in_2_comb" -line 86 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "data_in_2_comb" -line 88 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+debExit
